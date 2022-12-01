@@ -1,0 +1,598 @@
+@media  screen and (max-width: 1000px) {
+    
+    .account{
+        height: auto;
+      position: relative;
+    }
+    .account .content{
+        margin-bottom: 2rem;
+    }
+    .account nav{
+        margin-top: .8rem;
+        position: relative;
+        width: 100%;
+        
+      
+    }
+    .account nav .logo{
+        margin-left: 1rem;
+    }
+    .account nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        justify-items: center;
+        align-content: center;
+        position: absolute;
+        background: #fef9e6;
+        height:298px;
+        z-index: 100000000000000000000000000;
+        width: 100%;
+        border-radius: 0 0 50px 50px;
+        top: 70px;
+        text-align: start;
+        display: none;
+        box-shadow: inset 0px 6px 6px rgba(0, 0, 0, 0.1);
+    }
+    #nav{
+        position: absolute;
+        background: #fef9e6;
+        height: 500px;
+        z-index: 10000000000;
+        width: 100%;
+        clip-path: ellipse(80% 30% at 50% 0%);
+        top: 242px;
+        display: none;
+        box-shadow: inset 0px 6px 6px rgba(0, 0, 0, 0.1);
+    }
+    .account nav ul li{
+        margin-top: .8rem;
+        border: 1px solid #333333;
+        padding: .7rem;
+        width: 45%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-left: 2.5rem;
+
+    }
+    .account nav ul li a{
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        /* margin: auto; */
+    }
+    #account{
+        display: none;
+    }
+    .mediaM{
+        display: flex;
+    }
+    #menubar{
+       right: 7%; 
+       position: absolute;
+       top: 45%;
+    } 
+    
+    #closeicon{
+       position: absolute;
+        display: none;
+        right: 8%; 
+        top: 5%;
+    }
+    #acct{
+        width: 2.2rem;
+        object-fit: contain;
+        height: 1.3rem;
+        display: block;
+        right: 23%; 
+        position: absolute;
+        top: 37%;
+    }
+    
+    .account .list{
+        grid-template-columns: 1fr 1fr ;
+        width: 89%;
+        padding-bottom: 8rem;
+    }
+    .account .list .contnt{
+       height: 9rem;
+       width: 90%;
+       margin-top: 1rem;
+    }
+    .account .list .contnt h6{
+        height: 0px;
+    }
+
+    .account .list .contnt img{
+        width: 24px;
+       padding-top: 1rem;
+    }
+    .account .list .contnt p{
+        top: 0rem;
+        width: 90%;
+        margin: auto;
+        margin-top: -.0rem;
+    }
+
+    
+
+/* bar */
+.profile{
+    position: relative;
+    padding-bottom: 5rem;
+}
+
+#dash{
+    position: absolute; 
+    width:40% ;
+    display: none;
+    z-index: 100;
+}
+
+/* bar */
+.bar{
+    width: 13%;
+    background-color: #33cca8;
+    height: fit-content;
+    color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    padding-bottom: 2rem;
+}  
+
+
+
+/* profile */
+
+.profilec{
+    width: 100%;
+    margin-top: .5rem;
+    color: #333333;
+    position: relative;
+}
+.profilec form  .text{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+}
+.profilec form  .inputb{
+    height:auto;
+    margin: auto;
+    grid-template-columns: 1fr ;
+    padding-bottom: 1.5rem;
+}
+.profilec form  .inputb .input{
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+}
+.profilec form  .inputb .input  {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+form .save{
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 4rem;
+}
+form  .save button{
+    color: #ffffff;
+    cursor: pointer;
+    width: 90%;
+    margin: auto;
+}
+
+/* upgrade */
+.upgrade{
+    width: 95%;
+    margin: auto;
+    
+}
+
+.upgrade .agent{
+    width: 77%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+.upgrade  h2{
+   font-size: 22px;
+   margin-top: 2rem;
+}
+.upgrade  p{
+   font-size: 20px;
+}
+
+
+/* ACCOUNT TYPE */
+.account  .type{
+    height: 70px;
+    font-size: 16px;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+.type .typ{
+    display: block;
+   
+}
+.account  .type p{
+   margin-top: .3rem;
+    font-size: 15px;
+}
+.type .typ .span{
+    display: flex;
+     width: 100%;
+ }
+ .account .type .ty{
+    height: 100px;
+    margin-top: .8rem;
+ }
+
+/* verify */
+
+
+ 
+.verify{
+    width: 90%;
+    margin: auto;
+   margin-top: 0;
+
+}
+.verify h3{
+   font-size: 17px;
+}
+.verify .form{
+    width: 95%;
+}
+.verify .form form{
+    width: 90%;
+}
+.verify form .one{
+   flex-direction: column;
+   padding-top: 0rem;
+}
+.verify form .one .l{
+    width: 95%;
+    padding-top: 1rem;
+}
+.verify form .one .r{
+    width: 95%;
+    padding-top: 1rem;
+}
+.verify form .one input{
+    border: 2px solid #33cca8;
+    border-radius: 4px;
+    background-color: #e6f0ee;
+    width: 90%;
+    height: 2rem;
+    outline: transparent solid 2px;
+}
+.verify form .one .r .select{
+    width: 96%;
+}
+.verify form .one .l select{
+    width: 97%;
+    margin-bottom: .6rem;
+}
+.verify form .one .r select{
+    width: 32.5%;
+}
+
+.verify form .one textarea{
+    width: 90%;
+}
+
+
+form .last{
+    margin:auto ;
+    width: 90%;  
+    margin-top: 1.5rem;
+}
+
+form .last img{
+    width: 23%;
+}
+
+form .last .save button{
+    width: 60%;
+    text-align: center;
+}
+form .last .save button{
+    margin-top: -2rem;
+    padding: 0 3rem ;
+}
+
+
+ 
+
+
+/* houses */
+.houses{
+    width: 95%;
+    margin: auto;
+    position: relative;
+}
+.houses .img{
+    width: 90%;
+    margin: auto;
+    background-color: #effaf8;
+    height: 22rem;
+    display: grid;
+    place-items: center;
+}
+.houses .img img{
+width: 60%;
+}
+
+.houses .image{
+    width: 100%;
+}
+
+
+
+
+
+/* mobile housing */
+.houses{
+    height: auto;
+}
+#mobile .image{
+    width:82% ;
+}
+.houses .imge{
+    height:auto;
+  
+}
+.houses .imge h4{
+    width: 69%;
+    font-size: 18px;
+}
+.houses .image .cnt{
+    width: 90%;
+    margin: auto;
+   margin-top: .5rem;
+}
+.houses .image .cnt .lef{
+    width: 40%;
+}
+.houses .image .cnt .lef h4{
+    margin-top: .5rem;
+    text-align: start;
+}
+.houses .image .cnt .rght{
+    width: 55%;
+    text-align: start;
+    margin-left: .2rem;
+}
+ .houses .image .cnt .vimg img{
+    width: 90%;
+   height: 6rem;
+} 
+.houses .image .cnt .rght h4{ 
+    margin-left: -.0rem;
+}
+.houses .image .cnt .rght .fst{
+    display: flex;
+    margin: 1rem 0;
+
+}
+.houses .image .cnt .rght p{
+   margin-left: .2rem;
+    font-size: 14px;
+}
+.houses .rmve{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin-top: 50rem;
+    margin: 1.5rem 0;
+    color: #ffc700 ;
+}
+.houses .rmve p{
+    font-size: 13px;
+}
+.houses .rmve img{
+    margin-top: -3rem;
+    height: 1.5rem;
+    margin-left: 5rem;
+}
+
+
+
+
+/* message ul */
+.mssage{
+    display: flex;
+}
+.message{
+   flex-direction: column;
+   width: 25%;
+}
+.message .type{
+    height: 75vh;
+    margin-top: 2rem;
+    width: 95%;
+    padding: 2rem 0;
+}
+.message .type ul{
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+.message ul li{
+    padding-bottom: 3.5rem;
+    font-size: 16px;
+}
+.mcontainer{
+    width: 65%;
+    margin: auto;
+}
+.mcontainer h2{
+    margin-top: 1rem;
+}
+.mcontainer .container{
+    flex-direction: column;
+    width: 100%;
+}
+.mcontainer .small{
+    width: 100%;
+    margin: auto;
+}
+.mcontainer .small .contnt{
+    width: 100%;
+    height: 22vh;
+    margin-bottom: 2rem;
+}
+.mcontainer .big{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+.mcontainer .big .contnt{
+    width: 100%;
+    margin: auto;
+    height: 25vh;
+}
+
+.msage{
+    display: block;
+    margin-top: 2rem;
+}
+.mc{
+    width: 90%;
+}
+
+/* messageS */
+.mcontainer .msmall{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.mcontainer .msmall .contnt{
+    width: 100%;
+    margin: auto;
+}
+.mcontainer .bg{
+    width: 95%;
+    margin: auto;
+}
+
+.mcontainer .bg .mcontnt{
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.mcontainer .bg .mcontnt  .mtxt{
+    width: 90%;
+}
+
+.mcontainer .bg .mcontnt  .mtxt .one{
+   margin-top: 2rem;
+}
+.mc h2{
+    margin-top: 3rem;
+}
+
+
+/* dashboards */
+.dashboards{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#dashb{
+    width: .9rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+ #dashc{
+  position: absolute;
+  right: 0;
+  display: none;
+ }
+
+
+/* houses */
+
+.houses .image{
+    width: 86%;
+    margin: auto;
+    background-color: #effaf8;
+    /* height: auto; */
+   text-align: center;
+    border-radius: 5px;
+}
+
+
+
+
+ /* listing */
+
+ .profilel{
+    flex-direction: column;
+ }
+ .listing {
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+    margin-top: 2rem;
+    justify-content: start;
+
+}
+
+/* mobile listing */
+.houses .top{
+    margin-top: 2rem;
+}
+.listing .image .cont .first{
+    text-align: start;
+}
+.listing .image .cont .first img{
+    width: 90%;
+}
+.listing .image .cont .first h3{
+   font-size: 13px;
+}
+.listing .image .cont .second{
+    width: 92%;
+    margin: auto;
+}
+.listing .image .cont .second p{
+    width: 90%;
+    font-size: 14px;
+}
+.listing .remve{
+    position: absolute;
+   right: 0%;
+    bottom: 0%;
+}
+
+#desktop{
+    display: none;
+}
+#mobile{
+    display: grid;
+}
+
+
+}
+
+
+@media  screen and (max-width: 370px){
+    .message{
+        width: 33%;
+    }
+}
+
+
+
+ 
