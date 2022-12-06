@@ -24,47 +24,50 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <!-- navbar starts -->
+   <!-- navbar starts -->
 
-    <div class="navbar">
-        <div class="logo">
-            <a href="index.html"><img src="assets/img/logo.png" alt="logo-img"></a>
-        </div>
-
-        <div class="navlinks" id="navlinks">
-            <ul>
-                <a href="list-a-house.html"><li>List a House</li></a>
-                <a href="product.html"><li>Rent</li></a>
-                <a href="product.html"><li>Buy</li></a>
-                <li id="none"><a href="">Account</a>
-                    <ul>
-                        <a href="sign-in.html"><li>Sign-In</li></a>
-                        <a href="create-account.html"><li>Sign-Up</li></a>
-                    </ul>
-                </li>
-                <a href="faq.html"><li>Help</li></a>
-                
-            </ul>
-        </div>
-        <div class="account-icon"><a href="#"><i class="fa-regular fa-user fa-lg" style="color: #333;"></i></a></div>
-        <div class="hamburgeropen" id="hamburgeropen"><i class="fa-solid fa-bars fa-lg"></i></div>
-
-        <div class="navdropdown" id="navdropdown">
-            <div class="hamburgerclose" id="hamburgerclose"><i class="fa-solid fa-xmark fa-xl"></i></div>
-            <ul>
-                <a href="list-a-house.html"><li>List a House</li></a>
-                <a href="product.html"><li>Rent</li></a>
-                <a href="product.html"><li>Buy</li></a>
-                <a href="faq.html"><li>Help</li></a>
-                
-            </ul>
-        </div>
-
-        
+   <div class="navbar">
+    <div class="logo">
+        <a href="index.html"><img src="assets/img/logo.png" alt="logo-img"></a>
     </div>
 
+    <div class="navlinks" id="navlinks">
+        <ul>
+            <a href="list-a-house.html"><li>List a House</li></a>
+            <a href="product.html"><li>Rent</li></a>
+            <a href="product.html"><li>Buy</li></a>
+            <li id="none"><a href=""><i class="fa-regular fa-user" style="color: #333;"></i>Account</a>
+                <ul>
+                    <a href="sign-in.html"><li>Sign-In</li></a>
+                    <a href="create-account.html"><li>Sign-Up</li></a>
+                </ul>
+            </li>
+            <a href="faq.html"><li><i class="fa-regular fa-circle-question"></i>Help</li></a>
+            
+        </ul>
+    </div>
 
-    <!-- navbar ends -->
+    <div class="account-icon"><a href="#"><i class="fa-regular fa-user fa-lg" style="color: #333;"></i></a></div>
+    <div class="hamburgeropen" id="hamburgeropen"><i class="fa-solid fa-bars fa-lg"></i></div>
+
+    <div class="navdropdown" id="navdropdown">
+        <div class="hamburgerclose" id="hamburgerclose"><i class="fa-solid fa-xmark fa-xl"></i></div>
+        <ul>
+            <a href="list-a-house.html"><li>List a House</li></a>
+            <a href="product.html"><li>Rent</li></a>
+            <a href="product.html"><li>Buy</li></a>
+            <a href="faq.html"><li>Help</li></a>
+        </ul>
+        
+        <div class="nav2"></div>
+    </div>
+
+    
+</div>
+
+
+<!-- navbar ends -->
+
 
     <div class="list-a-house">
 
@@ -121,15 +124,9 @@
                 <div class="dropdown">
                     <p>Location</p>
                     <input type="text" placeholder="Location of the house">
-                </div>
-
-                    
+                </div>             
         
             </div>
-                
-
-            
-        
 
             
             <div class="dropdown-input">
@@ -172,45 +169,21 @@
                 </div>
                     
 
-                <div class="dropdown">
+                <div class="dropdown amenities">
                     <p>Amenities</p>
-                    <select class="form-select">
-                        <label for=""><p>Type of house</p></label>
-                        <option selected>Select all Applicable Options</option>
-                        <option value="1">Good access road</option>
-                        <option value="2">Security</option>
-                        <option value="3">Light</option>
-                    </select>
+                    <div class="button">
+                        <button id="amenitiesbtn">Select all Applicable Options</button>
+                    </div>
+                    <div class="amenities-dropdown" id="amenities-dropdown">
+                            <p>Good access road</p>
+                            <p>Security</p>
+                            <p>Light</p>
+                    </div>
                 </div>
 
-
-                <!-- <div class="dropdown">
-                    <p>Amenities</p>
-                    <select name="langOpt[]" multiple id="langOpt" class="form-select">
-                        <option value="C++"></option>
-                        <option value="C#">C#</option>
-                        <option value="Java">Java</option>
-                        <option value="Objective-C">Objective-C</option>
-                    </select>
-                </div> -->
-
-
-
-
-
-
-
-                </div>
+           </div>
                 
-            </div>
-  
-            
-                
-
-        
-    
-
-        
+            </div>    
             
             <div class="dropdown-input">
 
@@ -230,9 +203,15 @@
                 <div class="dropdown">
 
                     <p>Price</p>
-                    <div class="price">
+                    <!-- <div class="price">
                         <span>&#8358</span>
                         <input type="text">
+                    </div> -->
+                    <div class="input-group mb-3 price">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">&#8358</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
                     </div>
                     
                    
@@ -282,7 +261,6 @@
     <script defer src="assets/js/fontawesome.min.js"></script>
     <script src="assets/js/list-a-house.js"></script>
     <script src=”https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js”></script>
-    <!-- <script src="multiselect/jquery.multiselect.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     <script defer src="assets/js/main.js"></script>
