@@ -1,0 +1,1183 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+a{
+    text-decoration: none;
+    
+}
+input{
+    padding: 0 0 0 1rem ;
+    font-size: 18px;
+}
+textarea{
+    padding: 0 0 0 1rem ;
+    font-size: 18px;
+}
+.account{
+    width: 100%;
+    height: 50rem;
+    background-color: #ffffff;
+    z-index: 20;
+    
+}
+.account .content{
+    width: 100%;
+    color: hsla(47, 92%, 95%, 2);
+    background-color: #fef9e6;
+    height: 85px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+   z-index: 20;
+   /* display: none; */
+}
+.account nav{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    position: relative;
+    z-index: 20;
+    
+}
+
+
+.account nav ul{
+    display: flex;
+    width: 100%;
+    justify-items: end;
+    justify-content: end;
+    align-items: center;
+    align-content: center;
+}
+.account nav ul li{
+    list-style: none;
+    margin-left: 4rem;
+    display: flex;
+}
+.account nav ul li a{
+    text-decoration: none;
+    color: hsla(0, 0%, 20%, .7);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+}
+.account nav ul li img{
+    opacity: .8;
+}
+.mediaM{
+    width: 100%;
+    position: relative;
+    display: none;
+}
+#menubar{
+    width: 1.1rem;
+}
+
+#closeicon{
+    width: 1rem;
+    object-fit: contain;
+    height: 1.2rem;
+    display: none;
+}
+#acct{
+    display: none;
+}
+body{
+    position: relative;
+}
+.black{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: hsla(0, 0%, 0%, 0.8);
+    z-index: 1;
+     position: fixed;
+     display: none;
+}
+
+
+.account  .type{
+    background-color:#33cca8 ;
+    color: #ffffff;
+    width: 100%;
+    height: 62px;
+    display: flex;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    
+}
+.account .index{
+    margin-bottom: -3rem;
+}
+
+.type .typ{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.type .typ .span{
+   display: flex;
+    width: 28%;
+}
+.account  .type p{
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 25px;
+    width: 88%;
+    margin: auto;
+    display: flex;
+}
+.account .lst{
+     margin-top: 6rem;
+}
+.account .list{
+    position: relative;
+    box-sizing: border-box;
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+   
+}
+.account .list a{
+    color: #333333;
+}
+.account .list .contnt{
+    margin-bottom: 3rem;
+    border: 1px solid transparent;
+    background-color: #effaf8;
+    height: 160px;
+    width: 65%;
+    flex-direction: column;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+.account .list .contnt:hover{
+    background-color: #33cca8;
+    color: #ffffff;
+}
+.account .list .contnt h6{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 25px;
+    height: 22px;
+    top: 21px;
+    
+}
+.account .list .contnt img{
+    width: 13%;
+    
+}
+.account .list .contnt:hover img{
+    opacity: .5;
+}
+.account .list .contnt p{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-size: 16px;
+}
+
+
+
+/* PROFILE */
+.profile{
+    width: 100%;
+    display: flex;
+    margin-top: 2.5rem;
+}
+ .bar{
+    width: 13%;
+    background-color: #33cca8;
+    height: fit-content;
+    color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    padding-bottom: 2rem;
+}
+
+
+.bar .menu {
+    margin-top: 2.2rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+.bar .menu p{
+    margin-top: .6rem;
+}
+.bar .menu img{
+    width: 10%;
+}
+
+.bar .menu:hover{
+    color: #000;
+}
+.bar .menu:hover img{
+    opacity: .5;
+}
+
+
+.profilec{
+    width: 80%;
+    margin-top: 1.5rem;
+    color: #333333;
+}
+.profilec form {
+    width: 84%;
+    margin: auto;
+}
+.profilec form  .text{
+    width: 80%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.profilec form  .text p{
+    font-size: 17px;
+    margin-top: .4rem;
+}
+.profilec form  .inputb{
+    width: 100%;
+    background-color: #effaf8;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    border-radius: 5px;
+    padding-right: 1rem;
+}
+.inputp{
+    padding: 2rem 1rem;
+}
+.profilec form  .inputb .input{
+    width: 90%;
+    
+}
+.profilec form  .inputb .input .top{
+    display: flex;
+    margin-bottom: .5rem;
+}
+.profilec form  .inputb .input .top img{
+    margin-left: .9rem;
+}
+.profilec form  .inputb .input  input{
+    border: 3px solid #33cca8;
+    outline: transparent solid 2px;
+    height: 50px;
+    background-color:#effaf8;
+    border-radius: 3px;
+    width: 100%;
+}
+.profilec form .inputb .input  input::placeholder{
+    font-size: 13px;
+    color: hsla(0, 0%, 37%, 0.4);
+}
+form .save{
+    width: 92%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    padding-top: 3rem;
+}
+form  .save button{
+    color: #ffffff;
+    cursor: pointer;
+    width: 19%;
+    background-color: #ffc700;
+    border: 1px solid #ffc700;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    height: 2.5rem;
+}
+
+
+
+/* UPGRADE */
+.upgrade{
+    width: 85%;
+    text-align: center;
+    color: #333333;
+}
+.upgrade  h2{
+    margin-bottom: .7rem;
+}
+.upgrade  p{
+    margin-bottom: 3rem;
+}
+.upgrade .agent{
+    width: 94%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+.upgrade .agent .agentbar{
+    border: 2px solid rgba(51, 51, 51, .8);
+    height: auto;
+    border-radius: 10px;
+    padding-bottom: 1rem;
+    width: 95%;
+    margin-bottom: 3rem;
+    position: relative;
+}
+.upgrade .agent .agentbar a{
+    color: #333333;
+}
+.upgrade .agent .agentbar .first{
+    height: 4rem;
+    display: grid;
+    place-items: center;
+}
+.upgrade .agent .agentbar .second {
+    width: 84%;
+    margin: auto;
+}
+.upgrade .agent .agentbar .second h3{
+    margin: 1rem 0 2rem 0;
+}
+.upgrade .agent .agentbar .second p{
+    margin-bottom:2rem ;
+}
+.upgrade .agent .agentbar .u p{
+    margin-bottom: 1.6rem;
+}
+.upgrade .agent .agentbar .third{
+    width: 80%;
+    margin: auto;
+    height: 3rem;
+    display: flex;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+    border-radius: 5px;
+    
+   
+}
+
+
+
+
+/* VERIFY */
+.verify{
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    padding-bottom: 3rem;
+}
+.verify .frst{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+}
+.verify .frst a{
+    color:#ffc700 ;
+}
+.verify h3{
+    margin-bottom: 1.5rem;
+}
+.verify .form{
+    width: 95%;
+    margin: auto;
+    height: auto;
+    background-color: #e6f0ee;
+    border-radius: 4px;
+    padding-bottom: 2rem;
+}
+.verify .form form{
+    width: 85%;
+    margin: auto;
+    text-align: start;
+}
+.verify form .top {
+    margin-top: 2rem;
+}
+.verify form .top p{
+    padding: 2rem 0 0  0;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.verify form .one{
+    display: flex;
+    width: 100%;
+    padding-top: 2rem;
+}
+.verify form .one .l{
+    width: 50%;
+}
+.verify form .one .r{
+    width: 50%;
+}
+.verify form .one p{
+    margin-bottom: 1rem;
+}
+.verify form .one input{
+    border: 2px solid #33cca8;
+    border-radius: 4px;
+    background-color: #e6f0ee;
+    width: 90%;
+    height:50px;
+    outline: transparent solid 2px;
+}
+.verify form .one .r .select{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-bottom: 2rem;
+}
+.verify form .one .l select{
+    height: 55px;
+    line-height: 1.75rem;
+     outline-offset: 2px; 
+    outline: transparent solid 2px;
+    border: 2px solid #33cca8;
+    border-radius: 4px;
+    background-color: #e6f0ee;
+    width: 95%;
+    height: 55px;
+}
+
+.verify form .one .r select{
+    height: 50px;
+    line-height: 1.75rem;
+     outline-offset: 2px; 
+    outline: transparent solid 2px;
+    border: 2px solid #33cca8;
+    border-radius: 4px;
+    background-color: #e6f0ee;
+    width: 27%;
+    height: 55px;
+}
+
+.verify form .one textarea{
+    border: 2px solid #33cca8;
+    border-radius: 4px;
+    background-color: #e6f0ee;
+    width: 90%;
+    height: 5rem;
+    outline: transparent solid 2px;
+}
+.verify form .below{
+    width: 100%;
+}
+.verify form .below .type{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: transparent; */
+}
+
+
+.type .typ .span  a{
+    color: #ffc700;
+    margin-left: .5rem;
+}
+.type .typ .span  a:hover{
+    color: #fff;
+}
+
+form .last{
+    margin-top:1rem ;
+    width: 100%;  
+}
+form .last input{
+    width: 30%;
+}
+form .last .selfie{
+   display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+form .last img{
+    width: 6rem;
+    cursor: pointer;
+}
+form .last p{
+    color: #ffc700;
+    margin-left: .5rem;
+    cursor: pointer;
+}
+form .last .save{
+   text-align: center;
+}
+
+form .last .save button{
+    margin-top: -6rem;
+    padding: 0 3rem ;
+}
+
+
+/* houses */
+.houses{
+    width: 85%;
+    text-align: center;
+    color: #333333;
+    padding-bottom: 8rem;
+}
+.houses .top{
+    width: 90%;
+}
+.houses .top h2{
+    margin-bottom: .7rem;
+}
+.houses .top p{
+    margin-bottom: 3rem;
+}
+
+.houses .img{
+    width: 46%;
+    margin: auto;
+    background-color: #effaf8;
+    height: 16rem;
+   text-align: center;
+    border-radius: 5px;
+}
+.houses .img p{
+    padding-top: 2rem;
+}
+
+
+
+
+/* Saved houses */
+.houses .image{
+    width: 53%;
+    margin: auto;
+    background-color: #effaf8;
+    height: auto;
+   text-align: start;
+    border-radius: 12px;
+    display: grid;
+    padding-top: 1rem;
+    margin-top: 5rem;
+    margin-left: 9rem;
+    padding-bottom: 1rem;
+  
+}
+.houses .image h4{
+    text-align: start;
+    margin-left: 1.5rem;
+    margin-bottom: .5rem;
+}
+.houses .image .cnt{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.houses .image .cnt .left{
+    width: 43%;
+}
+
+.houses .image .cnt .left img{
+    width: 80%;
+}
+#desktop .image .cnt .left img{
+    height: 20vh;
+}
+.houses .image .cnt .right{
+    width: 55%;
+    margin-top: -.0rem;
+    text-align: start;
+    margin-left: 2rem;
+}
+.houses .image .cnt .right h4{
+    margin-left: -.0rem;
+}
+.houses .image .cnt .right .fsst{
+    display: flex;
+    margin: .5rem 0;
+}
+.houses .image .cnt .right .fsst p{
+    margin-left: .5rem;
+    line-height: 14px;
+}
+.houses .image .cnt .right .frsst{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.houses .image .cnt .right .frsst p{
+    margin-left: .5rem;
+   
+}
+.houses .image   h4{
+    margin-top: .5rem;
+    text-align: start;
+}
+.houses .image  .p{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 1.2rem;
+    width: 92%;
+    margin: auto;
+    margin-top: .6rem;
+}
+
+
+.houses .rmv{
+    display: flex;
+    justify-content: end;
+    width: 80%;
+    line-height: 1.5rem;
+    margin-top: -1.5rem;
+}
+.houses .rmv p{
+    color: #ffc700;
+    margin-right: .5rem;
+    
+}
+
+
+
+/* mobile housing */
+.houses .imge{
+    width: 40%;
+    height:auto;
+    border-radius: 20px;
+   
+}
+.houses .imge h4{
+    width: 69%;
+    font-size: 18px;
+}
+.houses .image .cnt{
+    width: 90%;
+    margin: auto;
+   margin-top: .5rem;
+}
+.houses .image .cnt .lef{
+    width: 40%;
+}
+.houses .image .cnt .lef h4{
+    margin-top: .5rem;
+    text-align: start;
+}
+.houses .image .cnt .lef .frst{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.houses .image .cnt .rght{
+    width: 55%;
+    text-align: start;
+    margin-left: .2rem;
+    margin-top: -.7rem;
+}
+ .houses .image .cnt .vimg img{
+    width: 90%;
+   height: 6rem;
+} 
+.houses .image .cnt .rght h4{ 
+    margin-left: -.0rem;
+}
+.houses .image .cnt .rght .fst{
+    display: flex;
+    margin: 1rem 0;
+
+}
+.houses .image .cnt .rght p{
+   margin-left: .2rem;
+    font-size: 12px;
+}
+.houses .rmve{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin-top: 50rem;
+    line-height: 1.5rem;
+    margin: 1.5rem 0;
+}
+.houses .rmve img{
+   margin-top: -3rem;
+   height: 1.5rem;
+}
+
+
+
+
+/* LIST */
+.listing {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+
+}
+.listing .image{
+    width: 40%;
+    height: 14.5rem;
+    padding-top: .9rem;
+}
+.listing .image .rite{
+    width: 92%;
+    margin: auto;
+    margin-top: -2rem;
+}
+.listing .image .right .frst{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin: 1rem 0 2rem  0;
+}
+.listing .image .right .fst{
+   display: flex;
+   margin-top: 1rem;
+}
+.listing .image .right .fst p{
+    margin-left: .5rem;
+    font-size: 15px;
+}
+.listing .image .cnt .left img{
+    margin-top: .5rem;
+    height: 21vh;
+}
+.listing .saves{
+    text-align: start;
+    margin-top: 5rem;
+    width: 50%;
+    margin-left: 2rem;
+    
+} 
+ .image .cnt .right .frst p{
+    margin-left: .5rem;
+   
+}
+.listing .saves p{
+    margin-top: 2.5rem;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+ .remove{
+    display: flex;
+    color: #ffc700;
+    line-height: 1.3rem;
+    margin-top: 2.5rem;
+    font-size: 13px;
+} 
+.remove img{
+    margin-left: .5rem;
+}
+
+#mobile{
+    display: none;
+}
+
+
+/* mobile for listing */
+   .listing{
+    position: relative;
+   }
+   
+   .listing .image .cont{
+    margin-top: 1rem;
+    width: 100%;
+   }
+
+    .listing .image .cont .first{
+        display: flex;
+        width: 94%;
+        margin: auto;
+        letter-spacing: 1px;
+    }
+    .listing .image .cont .first img{
+        width: 100%;
+        margin: auto;
+        height: 5rem;
+    }
+    .listing .image .cont .first h3{
+        margin-left: 1rem;
+        width: 65%;
+    }
+    .listing .image .cont .second{
+        width: 100%;
+        margin: auto;
+    }
+    .listing .image .cont .second p{
+        margin-top: 1rem;
+    }
+    .listing .save p{
+       width: 70%;
+       font-weight: 600;
+       display: flex;
+       justify-content: space-between;
+    }
+
+    .listing .remve{
+        position: absolute;
+        right: 44%;
+        bottom: 0%;
+    }
+
+
+
+
+/* MESSAGES */
+.mssage{
+    width: 100%;
+}
+.message{
+    width: 100%;
+}
+.message .type{
+    height: 5rem;
+    
+}
+ .message .type ul{
+    display: flex;
+    width: 75%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+ .message ul li{
+    list-style: none;
+    display: block;
+    text-align: center;
+    /* height:1.2rem ;
+     padding-right:.3rem; */
+}
+.message ul li:hover a{
+    color: #000;
+}
+.message ul li:hover img{
+    opacity: .5;
+}
+ .message  a{
+    text-decoration: none;
+    color: #ffffff;
+   
+}
+
+
+.mcontainer{
+    width: 100%;
+    text-align: center;
+}
+.mcontainer h2{
+    margin-bottom: 1rem;
+}
+.mcontainer p{
+    font-size: 19px;
+}
+.mcontainer .container{
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+}
+.mcontainer .container p{
+    font-size: 16px;
+}
+.mcontainer .small{
+    width: 35%;
+}
+.mcontainer .small .contnt{
+    width: 70%;
+    margin: auto;
+    height: 40vh;
+    background-color: #effaf8;
+    border-radius: 6px;
+    padding-top: 1.5rem;
+}
+.mcontainer .small .contnt form{
+    width: 80%;
+    margin: auto;
+    border: 2px solid #33cca8;
+    border-radius: 3px;
+    height: 3rem;
+    
+}
+.mcontainer .small .contnt form .input{
+    width: 90%;
+    margin: auto;
+    height: 3rem;
+    display: flex;
+    place-items: center;
+}
+.mcontainer .small .contnt input{
+    border:2px solid transparent ;
+    background-color: transparent;
+    padding-left: 0;
+    height: 3rem;
+    width: 90%;
+    margin-right: .8rem;
+    font-size: 17px;
+    outline: 2px solid transparent;
+}
+.mcontainer .big{
+    width: 65%;
+}
+.mcontainer .big .contnt{
+    width: 80%;
+    background-color: #effaf8;
+    border-radius: 6px;
+    display: grid;
+    height: auto;
+    padding: 3rem 0;
+    place-items: center;
+}
+.mcontainer .big .contnt .img p{
+    margin-bottom: 2rem;
+}
+
+
+
+
+/* message S */
+.msg{
+   
+    width: 90%;
+    margin: auto;
+    text-align: start;
+}
+.msg p{
+    margin: .2rem 0;
+}
+.msg .input{
+    text-align: start;
+    margin-top: 2rem;
+    width: 80%;
+}
+.msg textarea{
+    width: 70%;
+    height: 60px; 
+   
+}
+
+.mcontainer{
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.mcontainer .msmall{
+    width: 30%;
+}
+.mcontainer .msmall .contnt{
+    width: 80%;
+    margin: auto;
+    height: auto;
+    background-color: #effaf8;
+    border-radius: 6px;
+    padding: 1.5rem 0;
+}
+.mcontainer .msmall .contnt form{
+    width: 80%;
+    margin: auto;
+    border: 2px solid #33cca8;
+    border-radius: 3px;
+    height: 3rem;
+    
+}
+.mcontainer .msmall .contnt form .input{
+    width: 90%;
+    margin: auto;
+    height: 3rem;
+    display: flex;
+    place-items: center;
+}
+.mcontainer .msmall .contnt input{
+    border:2px solid transparent ;
+    background-color: transparent;
+    padding-left: 0;
+    height: 3rem;
+    width: 90%;
+    margin-right: .8rem;
+    font-size: 15px;
+    outline: 2px solid transparent;
+}
+.mcontainer .msmall .contnt  p{
+    margin-top: 1.5rem;
+}
+
+
+
+.mcontainer .bg{
+    width: 70%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.mcontainer .bg .mcontnt{
+    width: 80%;
+    background-color: #effaf8;
+    border-radius: 6px;
+    display: grid;
+    height: auto;
+    padding: 1.3rem 0;
+    margin: auto;
+}
+.mcontainer .bg .mcontnt .msg{
+    text-align: center;
+    padding: 1.6rem 0;
+}
+.mcontainer .bg .mcontnt  .mtxt{
+    width: 94%;
+    margin: auto;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.mcontainer .bg .mcontnt  .mtxt .one{
+    background-color: #ffffff;
+    width: 80%;
+    padding: .5rem 0 1.5rem .5rem;
+    text-align: start;
+    border-radius: 6px;
+    position: relative;
+    height: auto;
+    font-size: 14px;
+    margin-bottom: 3rem;
+}
+  .mtxt .one p{
+    margin-bottom: .4rem;
+   
+}
+.mtxt .one span{
+    text-align: end;
+    position: absolute;
+    right: 1rem;
+}
+.mcontainer .bg .mcontnt  .mtxt li{
+    list-style: none;
+}
+.mcontainer .bg .mcontnt  .mtxt li:nth-child(2){
+    margin-left: auto;
+}
+.mcontainer .bg .mcontnt  .mtxt li:nth-child(4){
+    margin-left: auto;
+}
+.mcontainer .bg .mcontnt  .mtxt .two{
+    background-color: #fef9e6;
+    width: 80%;
+    padding: 1rem 0 1rem .5rem;
+    text-align: start;
+    border-radius: 6px;
+    position: relative;
+    height: auto;
+    font-size: 14px;
+}
+.mtxt .two span{
+    text-align: end;
+    position: absolute;
+    right: 1rem;
+    padding-bottom: 1rem 0;
+}
+
+.mcontainer .bg .mcontnt  .mtxt .three{
+    margin-top: 3rem;
+    background-color: #ffffff;
+    width: 60%;
+    padding: .5rem 0 1.5rem .5rem;
+    text-align: start;
+    border-radius: 6px;
+    position: relative;
+    height: auto;
+    font-size: 14px;
+    margin-bottom: 1rem;
+
+}
+  .mtxt .three p{
+    margin-bottom: .8rem;
+}
+.mtxt .three span{
+    text-align: end;
+    position: absolute;
+    right: 1rem;
+}
+
+.mcontainer .bg .mcontnt  .mtxt .four{
+    margin-top: 3rem;
+    background-color: #fef9e6;
+    width: 60%;
+    padding: 1rem 0 1rem .5rem;
+    text-align: start;
+    border-radius: 6px;
+    position: relative;
+    /* justify-content: end; */
+    flex-direction: column;
+    height: 4.2rem;
+    font-size: 14px;
+    display: grid;
+    margin-bottom: 5rem;
+}
+.mtxt .four span{
+    text-align: end;
+    position: absolute;
+    right: 2rem;
+    padding-top: .5rem;
+}
+
+.msg-box{
+    width: 85%;
+    margin-top: 5rem;
+    margin: auto;
+    border: 2px solid #33cca8;
+    border-radius: 15px;
+    padding: .3rem .5rem;
+    display: grid;
+    place-items: end;
+}
+
+
+
+
+/* message bar */
+#bar{
+    margin-bottom: 2.5rem;
+}
+
+
+/* dashboards */
+#dashb{
+    display: none;
+}
+#dashc{
+    display: none;
+}
+
+
+
+/* image preview */
+.image-preview{
+    width: 6rem;
+    min-height: 50px;
+    border: 2px solid #dddddd;
+    margin-top: 15px;
+
+    /* default text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #cccccc;
+    font-size: 11px;
+
+}
+.image-preview__image{
+    width: 100%;
+    display: none;
+}
+label{
+    position: relative;
+}
+ 
+
+

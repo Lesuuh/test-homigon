@@ -1,0 +1,661 @@
+
+.product{
+    padding: 0px 80px;
+    margin-top: 100px;
+}
+
+.product form{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+form .input-search input{
+    width: 500px;
+    height: 60px;
+    border: 2px solid #33CCA8;
+    border-radius: 5px;
+    padding: 30px;
+
+}
+
+.product .dropdown .dropdown-options{
+    width: 90%;
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
+
+.product .dropdown .dropdown-options .searchbtn button{
+    width: 250px;
+    height: 55px;
+    background: #FFC700;
+    border-radius: 10px;
+    padding: 10px 10px;
+    outline: none;
+    border: none;
+}
+
+.product .dropdown .dropdown-options .options{
+    margin: 10px;
+}
+.product .dropdown .dropdown-options .options select{
+    width: 200px;
+    height: 70px;
+    border: 2px solid #33CCA8;
+    border-radius: 5px;
+}
+
+
+
+/* breadcrumbs */
+.breadcrumbs{
+    margin-top: 70px;
+}
+.breadcrumbs ul { 
+    list-style: none;
+    padding: 0; 
+} /* remove bullet points */
+
+.breadcrumbs ul li {
+     display: inline; 
+    } /* show list items horizontally */
+
+/* Put an angle bracket (>) between list items */
+.breadcrumbs ul li+li:before {
+  content: ">";
+  padding: 10px;  
+}
+
+.breadcrumbs  li a { 
+    text-decoration: none; 
+} /* remove underlines from links */
+
+.breadcrumbs ul li a:hover {
+     text-decoration: underline; 
+    } /* show underline on mouseover */
+
+/* additional styling */
+.breadcrumbs ul {
+  color: #33CCA8;
+  font-weight: bold;
+}
+
+.breadcrumbs  li a {
+    color: #333;
+}
+
+.breadcrumbs ul li a:visited {
+    color: #333;
+}
+
+.breadcrumbs ul li+li:before {
+     color: #333; 
+}
+
+.listed-container{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+}
+
+.listed{
+    width: 60%;
+    height: 1500px;
+    background: #effaf8;
+    /* padding: 0 50px; */
+    border-radius: 20px;
+    
+}
+
+.contact-agent{
+    width: 20%;
+    margin-left: 100px;
+    height: auto;
+}
+
+.contact-agent .details-rating{
+
+}
+
+.listed .img-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border: none;
+    
+}
+
+.listed .img-container .img-box1{
+    width: 100%;
+    height: 100%;
+    margin-top: -45px;
+}
+
+.listed .img-container .img-box1 img{
+    width: 100% ;
+    height: 300px;
+    margin-top: 0;
+    /* object-fit: contain; */
+}
+
+
+.listed .img-container .img-box{
+    margin-top: 30px;
+}
+
+.listed .img-container .img-box img{
+    width: 174px;
+    height: 160px;
+    object-fit: contain;
+}
+
+
+.listed .details{
+    margin-top: 50px;
+    padding: 0 30px;
+    
+}
+
+.listed .details p{
+    font-weight: 700;
+    
+}
+.listed .details .price-time-location{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+}
+
+.listed .details .price-time-location .price{
+    width: 100%;
+}
+
+.listed .details .price-time-location .location-time{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.listed .details .price-time-location .time{
+    width: 50%;
+    /* text-align: end; */
+}
+.listed .details .price-time-location .location{
+    margin-top: 0;
+    padding: 0;
+    
+}
+.listed .details .price-time-location .location p{
+    padding: 0;
+    margin-top: 0;
+    display: block;
+}
+
+
+.listed .details .icons_and_more_description{
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+}
+
+
+.listed .details .icons_and_more_description .bed-icon{
+    width: 150px;
+    height: 60px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+} 
+
+
+
+.listed .details .icons_and_more_description .bed-icon-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 70px;
+    background: #33CCA8;
+}
+
+.listed .details .icons_and_more_description .bed-icon-img img{
+    margin: 25%;
+}
+
+
+.listed .descriptions{
+    margin-top: 50px;
+    padding: 0 30px;
+}
+
+.listed .descriptions .small{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.listed .descriptions #amenities{
+   font-weight: 700;
+
+}
+
+.listed .descriptions #amenities .small{
+    display: flex;
+    flex-flow: row;
+    font-size: 1rem;
+    padding: 0px 20px 0px 0px;
+}
+
+
+.call-agent{
+    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    
+    
+}
+
+.call-agent .button{
+    
+    background: #FFC700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    /* margin-top: 50px; */
+ 
+}
+
+.call-agent .button:nth-child(2){
+    background: #effaf8;
+    border: 2px solid #FFC700;
+    color: #333;
+    margin-top: 20px;
+    
+}
+
+.call-agent .button a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.save-for-later{
+    display: flex;
+    flex-flow: row;
+    margin-top: 20px;
+    padding: 0 50px;
+   
+}
+.save-for-later p{
+    margin-left: 10px;
+}
+
+
+
+
+.details-rating .agent-details{
+    background: #effaf8;
+    width: 300px;
+    height: 240px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: 700;
+    margin-top: 50px;
+    position: relative;
+}
+.details-rating .agent-details p{
+    font-weight: 700;
+
+}
+.details-rating .agent-details p #name{
+    font-weight: 500;
+}
+.checked{
+    color: orange;
+}
+
+
+.details-rating .agent-rating-reviews{
+    background: #33CCA8;
+    color: #fff;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 5px;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+
+.similar-houses{
+    margin-top: 50px;
+    padding: 50px 0;
+    
+}
+
+.similar-houses p{
+    font-weight: 700;
+}
+
+.similar-houses .top p{
+    font-size: 1.2rem;
+    padding: 20px 0 0 30px;
+}
+
+.similar-houses .body{
+    display: flex;
+    flex-flow: column;
+    width: 300px;
+    margin: 25px 25px;
+    border-radius: 20px;
+    justify-content: center;
+  
+
+}
+
+
+.similar-houses .body .img{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+
+}
+
+.similar-houses .body .img img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    
+}
+.similar-houses .body .img .icon-price{
+    background: rgba(51, 51, 51, 0.7);
+    position: relative;
+    width: 300px;
+    height: 77px;
+    margin-top: -75px;
+    /* left: 0; */
+    z-index: 1000;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.similar-houses .body .img .icon-price .price{
+    font-weight: 700;
+    margin-top: 15px;
+    color: #fff;
+}
+.similar-houses .body  .img .icon-price .icons_and_more_description{
+    /* background: #333; */
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.similar-houses .body .img .icon-price .icons_and_more_description .bed-icon{
+    margin: 20px 20px 0 0;
+
+}
+
+.similar-houses .body .img .icon-price .icons_and_more_description .bed-icon .bed-icon-img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background: #33CCA8;
+
+}
+
+.similar-houses .body .img .icon-price .icons_and_more_description .bed-icon .bed-icon-img img{
+   width: 18px;
+   height: 18px;
+   margin: 4px;
+   color: #333;
+}
+
+.similar-houses .body .img .icon-price .icons_and_more_description .bed-icon p{
+    text-align: center;
+    color: #fff;
+
+}
+
+.similar-houses .body .description{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background: #e9fdf8;
+    align-items: flex-start;
+    padding: 20px 30px;
+    border-radius: 0px 0px 20px 20px;
+}
+.similar-houses .body .description p{
+    width: 100%;
+}
+
+.similar-houses .body .description .location-and-time-listed{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.similar-houses .body .description .location{
+    margin-top: 15px;
+}
+
+.similar-houses .body .description .location img{
+    /* width: 20px; */
+    
+}
+
+.similar-houses .time-listed img{
+    /* width: 15px; */
+}
+
+
+
+@media only screen and (max-width: 991px){
+    .product{
+        padding: 0 30px;
+    }
+
+    .product .dropdown .dropdown-options{
+        padding: 0;
+    }
+
+    .listed{
+        width: 100%;
+        padding: 0 10px;
+        height: auto;
+    }
+
+    .contact-agent{
+        width: 100%;
+        margin-left: 0;
+    }
+    .similar-houses .property-listed{
+        margin-left: 0;
+    }
+    
+}
+
+@media only screen and (max-width: 512px){
+    form .input-search input{
+        width: 300px;
+        height: 50px;
+        padding: 20px;
+    }
+
+    .product .dropdown .dropdown-options{
+        justify-content: space-between;
+        
+        width: 100%;
+        gap: 0;
+        
+    }
+
+    .product .dropdown .dropdown-options .options{
+        margin: 10px;
+    }
+    .product .dropdown .dropdown-options .options select{
+        width: 125px;
+        height: 45px;
+    }
+
+
+    .product .dropdown .dropdown-options .searchbtn button{
+        width: 125px;
+        height: 45px;
+    }
+   
+    
+
+    .listed{
+        height: auto;
+    }
+
+    .listed .details{
+        padding: 0;
+    }
+    .listed .descriptions{
+        padding: 0;
+    }
+
+
+    .listed .img-container .img-box1 img {
+        width: 300px;
+        height: 222px;
+    }
+
+    .listed .img-container .img-box img {
+        width: 70px;
+        height: 90px;
+    }
+    .listed .icons_and_more_description .bed-icon-img{
+        width: 50px;
+        height: 50px;
+    }
+    .listed .icons_and_more_description .bed-icon-img img{
+        margin: 10%;
+    }
+
+    .contact-agent .details-rating{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+
+    }
+    .contact-agent .details-rating .agent-details{
+        height: 176px;
+    }
+
+    .contact-agent .details-rating .agent-details .call-agent{
+        display: none;
+    
+    }
+    .contact-agent .details-rating .agent-rating-reviews{
+        height: 176px;
+        justify-content: flex-start;
+    }
+
+
+    
+    .similar-houses .top p{
+        font-size: 1rem;
+    }
+    
+
+    .similar-houses .body{
+        width: 250px;
+        margin: 30px 0;
+    }
+
+    .similar-houses .body .img{
+        width: 250px;
+    }
+    .similar-houses .property-listed .body .description{
+        font-size: .8rem;
+        margin: 0;
+
+    }
+
+    .similar-houses .property-listed .body .description .location{
+        margin: 5px 0;
+    }
+    .property-listed .body .description .icons_and_more_description {
+        margin: 0;
+    }
+    .similar-houses .property-listed .body .img{
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items:  center;
+    }
+    
+    .similar-houses .property-listed .body .img img{
+        width: 100px;
+        height: 74px;
+    }
+    
+}
+
+@media only screen and (max-width: 375px){
+    form .input-search input{
+        width: 300px;
+        height: 45px;
+    }
+
+    .listed .img-container .img-box1 img {
+        width: 250px;
+        height: 180px;
+    }
+    .call-agent{
+      width: 100%;
+      flex-flow: row nowrap;
+    }
+    .call-agent .button{
+        width: 120px;
+
+    }
+
+    .call-agent .button:nth-child(2){
+       margin-top: 0;
+       gap: 10px;
+       margin-left: 15px;
+       border: 2px solid #33CCA8;
+       
+    }
+
+    .call-agent .button a{
+        font-size: .9rem;
+    }
+
+   
+    
+    
+    
+}

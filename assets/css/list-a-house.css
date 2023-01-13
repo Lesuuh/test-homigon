@@ -1,0 +1,223 @@
+
+
+.list-a-house .header{
+    background: #33cca8;
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.list-a-house .header h2{
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+}
+
+.list-a-house .step-one .heading{
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.list-a-house .step-one .heading p{
+    background: #FFC700;
+    padding: 8px 100px;
+    border-radius: 50px;
+}
+
+
+.list-a-house .dropdown-input{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.list-a-house  .dropdown-input .dropdown{
+    width: 500px;
+    height: 70px;
+    margin: 20px 20px;
+    
+}
+
+.list-a-house .dropdown select{
+    border-radius: 5px;
+    border: 2px solid #33cca8;
+}
+
+.list-a-house .dropdown-input .dropdown p{
+    margin-bottom: 5px;
+}
+
+.list-a-house .dropdown input{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid #33cca8;
+    border-radius: 5px;
+}
+
+.list-a-house .dropdown .price{
+    display: flex;
+    flex-flow: row;
+    /* width: 100px; */
+}
+.list-a-house .dropdown .price span{
+    padding: 6px 30px;
+    border: 2px solid #33cca8;
+    border-radius: 5px 0 0 5px;
+    background: #fff;
+}
+.list-a-house .step-two .heading{
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.list-a-house .step-two .heading p{
+    background: #FFC700;
+    padding: 8px 100px;
+    border-radius: 50px;
+}
+
+
+textarea{
+    border: 2px solid #33CCA8;
+    border-radius: 5px;
+    width: 100%;
+    overflow: hidden;
+}
+
+textarea::placeholder{
+    text-align: left;
+    position: relative;
+    padding: 10px;
+    
+    color: #33CCA8;
+    font-size: .8rem;
+
+}
+
+.list-a-house .buttons{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-top: 150px;
+
+}
+
+.list-a-house .buttons button{
+    width: 250px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.list-a-house .buttons a{
+    text-decoration: none;
+    color: #333;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFC700;
+    margin: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.list-a-house .buttons a:first-child{
+    border: 2px #33CCA8 solid;
+    background: #fff;
+
+}
+
+.list-a-house .buttons a:nth-child(2){
+    background: #FFC700;
+    color: #fff;
+    
+} 
+
+
+/* amenities */
+.multiselect {
+    width: 100%;
+    height: 40px;
+    
+  }
+  
+  .selectBox {
+    position: relative;
+  }
+  
+  .selectBox select {
+    width: 100%;
+    font-weight: 400;
+    height: 40px;
+    padding: 0 10px;
+  }
+  .selectBox select option{
+    background: #fff;
+  }
+  
+  .overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  #checkboxes {
+    display: none;
+    border: 1px #dadada solid;
+    position: absolute;
+    z-index: 10000;
+    background: #fff;
+    width: 100%;
+  }
+  
+  #checkboxes label {
+    display: block;
+
+  }
+  
+  #checkboxes label:hover {
+    background-color: #1e90ff;
+  }
+
+  .list-a-house .amenities input{
+    width: 20px;
+    height: 15px;
+    margin: 5px 5px 0 5px;
+  }
+
+
+
+@media only screen and (max-width: 512px){
+    .list-a-house .dropdown-input{
+        padding: 0 20px;
+    }
+    
+
+}
+
+@media only screen and (max-width: 375px){
+    .list-a-house .step-one .heading p{
+        padding: 7px 50px;
+    }
+    .list-a-house .step-two .heading p{
+        padding: 7px 50px;
+    }
+
+    .list-a-house .buttons a{
+        width: 100px;
+        height: 45px;
+        margin: 20px;
+        font-size: 16px;
+       
+    }
+}

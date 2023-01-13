@@ -1,0 +1,1404 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-shadow: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+h1{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+}
+h2{
+    font-family: 'Quicksand';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 25px;
+}
+h3{
+    font-family: 'Quicksand';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+}
+
+
+p{
+    font-family: 'Quicksand';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+}
+
+::placeholder{
+    /* padding-left: 50px; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 30px;
+    color: #C4C4C4;
+}
+/* nav-bar */
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    color: #333;
+    background: #FEF9E6;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0px;
+    
+}
+
+
+.navbar .logo{
+   width: 100px;
+   height: 70px;
+   margin-left: 100px;
+   
+}
+.navbar .logo img{
+    width: 80px;
+    height: 60px;
+}
+
+.navbar ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 70px;
+    
+}
+
+
+
+.navbar ul li{
+    /* position: relative; */
+    list-style: none;
+    margin: 10px 15px 0px 35px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #333;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 22px;
+    transition: color 0.3s ease-out;
+}
+
+.navbar .navlinks{
+    margin-left:auto ;
+    
+}
+
+.navbar .navlinks ul li ul{
+    position: absolute;
+    display: none;
+    width: 160px;
+    height: 80px;
+    z-index: 2000;
+    background: #fff;
+    border-radius: 5px;
+    padding: 0;
+}
+
+.navbar .navlinks a{
+    color: #333;
+    font-weight: 500;
+}
+
+
+.navbar .navlinks ul li:hover ul{
+    display: block;
+    color: #33CCA8;
+
+}
+
+.navbar .navdropdown{
+    display: none;
+}
+
+
+
+.fa-user{
+    padding-right: 5px;
+}
+.fa-question-circle{
+    padding-right: 5px;
+}
+
+.account-icon{
+    display: none;
+}
+
+.hamburgeropen{
+    display: none;
+    margin-right: 20px;
+    
+}
+
+.hamburgeropen:hover{
+    cursor: pointer;
+}
+
+.hamburgerclose{
+    position: relative;
+    float: right;
+    right: 40px;
+    top: 18px;
+}
+
+.hamburgerclose:hover{
+    cursor: pointer;
+}
+
+
+/* navbar ends */
+
+
+/* hero section starts */
+
+.hero{
+    
+    width: 100%;
+    padding: 0px 100px 50px 100px;
+    height: 700px;
+    background: url("../img/hero-img-one.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    /* flex-flow: column; */
+    animation: change 20s infinite ease-in-out;
+
+}
+
+@keyframes change {
+    0%{
+        background: url("../img/hero-img-one.png");
+    }
+    20%{
+        background: url("../img/hero-img-two.png");
+    }
+    40%{
+        background: url("../img/hero-img-three.png");
+    }
+    60%{
+        background: url("../img/hero-img-one.png");
+    }
+    80%{
+        background: url("../img/hero-img-two.png");
+    }
+    100%{
+        background: url("../img/hero-img-three.png");
+    }
+    
+}
+
+.hero-content{
+    position: relative;
+    width: 100%;
+    /* padding-top: 20px; */
+}
+
+.hero .head{
+    /* position: absolute; */
+    text-align: center;
+    width: 45%;
+    margin-top: 100px;
+    color: #fff;
+}
+
+
+.hero .head h3{
+    margin-top: -40px;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: left;
+}
+
+.hero .head p{
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: left;
+}
+.hero .buy-rent-lease{
+    
+    color: #333;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.hero .buy > p, .rent > p, .lease > p{
+    margin: 0px 5px;
+    padding: 15px 0px;
+    background: #33CCA8;
+    color: #fff;
+    border-radius: 10px;
+
+    text-align: center;
+    font-size: 20px;
+    width: 150px;
+    height: 55px;
+}
+
+
+::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+}
+
+
+/* dropdown starts here */
+.hero .dropdown{
+    width: 100%;
+    margin-top: 30px;
+    padding-bottom: 50px;
+    /* padding: 0 125px; */
+    
+}
+
+.hero .dropdown-options{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0 170px;
+    justify-content: space-between;
+    
+    /* gap: 40px; */
+}
+
+.hero .dropdown-options .searchbar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero .dropdown-options .searchbar input{
+    width: 800px;
+    height: 70px;
+    background: #333;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.hero .dropdown-options .searchbar input:focus{
+    outline: 1px solid #33CCA8;
+}
+
+.hero .dropdown-options .searchbar input::placeholder{
+    color: rgba(236, 234, 234, 0.5);
+}
+
+.hero .dropdown-options .options{
+    margin-top: 30px;
+
+}
+
+.hero .dropdown-options .options select{
+    width: 200px;
+    height: 70px;
+    border: 4px solid #33CCA8;
+    background: transparent;
+    border-radius: 5px;
+    color: #fff;
+    padding: 0 10px;
+    font-weight: 700;
+}
+
+.hero .dropdown-options .options select option{
+    color: black;
+    /* background: #effaf8; */
+}
+
+
+.hero .dropdown-options .search-button{
+    width: 100%;
+
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+}
+
+.hero .dropdown-options .search-button input{
+    width: 250px;
+    height: 60px;
+    background: #FFC700;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+
+
+.hero .dropdown input:focus{
+   outline: none;
+} 
+
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+
+
+/* dropdown ends here */
+
+/* hero section ends */
+
+/* sub hero */
+.sub-hero{
+    width: 100%;
+    /* height: 150px; */
+    background: #effaf8;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: baseline;
+    padding: 0 100px;
+}
+
+.sub-hero .item{
+    width: 400px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.section1{
+    padding: 0 100px;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+
+.section1 .img img{
+    position: relative;
+    /* left: 145px; */
+}
+.section1 .text{
+    width: 40%;
+    align-self: center;
+}
+
+.section1 .text p{
+    font-weight: 700;
+
+}
+
+
+/* listing section begins */
+
+a .body{
+    text-decoration: none;
+    color: #333;
+}
+
+.listing{
+    width: 100%;
+    height: auto;
+    padding: 0 100px;
+}
+
+.listing h3{ 
+    color: #333;
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    
+    
+}
+
+
+.listing .listed-houses{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+
+.listing .listed-houses .body{
+    display: flex;
+    flex-flow: column;
+    width: 300px;
+    margin-top: 25px;
+    border-radius: 20px;
+    justify-content: center;
+  
+
+}
+
+
+.listing .listed-houses .body .img{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+
+}
+
+.listing .listed-houses .body .img img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    
+}
+.listing .listed-houses .body .img .icon-price{
+    background: rgba(51, 51, 51, 0.7);
+    position: relative;
+    width: 300px;
+    height: 77px;
+    margin-top: -75px;
+    /* left: 0; */
+    z-index: 1000;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.listing .listed-houses .body .img .icon-price .price{
+    font-weight: 700;
+    margin-top: 15px;
+    color: #fff;
+}
+.listing .listed-houses .body  .img .icon-price .icons_and_more_description{
+    /* background: #333; */
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.listing .listed-houses .body .img .icon-price .icons_and_more_description .bed-icon{
+    margin: 20px 20px 0 0;
+
+}
+
+.listing .listed-houses .body .img .icon-price .icons_and_more_description .bed-icon .bed-icon-img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background: #33CCA8;
+
+}
+
+.listing .listed-houses .body .img .icon-price .icons_and_more_description .bed-icon .bed-icon-img img{
+   width: 18px;
+   height: 18px;
+   margin: 4px;
+   color: #333;
+}
+
+.listing .listed-houses .body .img .icon-price .icons_and_more_description .bed-icon p{
+    text-align: center;
+    color: #fff;
+
+}
+
+.listing .listed-houses .body .description{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background: #e9fdf8;
+    align-items: flex-start;
+    padding: 20px 30px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.listing .listed-houses .body .description p{
+    width: 100%;
+}
+
+.listing .listed-houses .body .description .location-and-time-listed{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.listing .listed-houses .body .description .location{
+    margin-top: 15px;
+}
+
+
+.listing p a{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 100px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #FFC700;
+}
+
+/* listing section ends */
+
+
+/* become-an-agent starts */
+
+.become-an-agent{
+    width: 100%;
+    height: 80px;
+    background: #effaf8;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+
+.become-an-agent p{
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.become-an-agent .button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #FFC700;
+    height: 50px;
+    border-radius: 10px;
+    margin: 0px 0px 0px 60px;
+
+}
+.become-an-agent .button a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0px 40px;
+    font-weight: 700;
+    line-height: 30px;
+    /* margin: 0px 20px; */
+
+}
+/* subscribe to our newsletter */
+.subscribe{
+    width: 100%;
+    height: 160px;
+    background: #effaf8;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 75px 0px;
+    padding: 0 250px;
+}
+
+.subscribe input{
+    width: 500px;
+    height: 50px;
+    border: 2px solid #33CCA8;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.subscribe button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    border: none;
+    height: 55px;
+    border-radius: 10px;
+    background: #FFC700;
+    color: #fff;
+
+}
+.subscribe a button{
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 30px;
+
+}
+/* become-an-agent ends */
+
+/* recent houses section starts */
+.recently-listed{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    padding: 0 100px;
+}
+
+.recently-listed h3{ 
+    color: #333;
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+
+.recently-listed .recent-houses{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+.recently-listed .recent-houses .body{
+    display: flex;
+    flex-flow: column;
+    width: 300px;
+    margin-top: 25px;
+    border-radius: 20px;
+    justify-content: center;
+  
+
+}
+
+
+.recently-listed .recent-houses .body .img{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+
+}
+
+.recently-listed .recent-houses .body .img img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    
+}
+.recently-listed .recent-houses .body .img .icon-price{
+    background: rgba(51, 51, 51, 0.7);
+    position: relative;
+    width: 300px;
+    height: 77px;
+    margin-top: -75px;
+    /* left: 0; */
+    z-index: 1000;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.recently-listed .recent-houses .body .img .icon-price .price{
+    font-weight: 700;
+    margin-top: 15px;
+    color: #fff;
+}
+.recently-listed .recent-houses .body  .img .icon-price .icons_and_more_description{
+    /* background: #333; */
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.recently-listed .recent-houses .body .img .icon-price .icons_and_more_description .bed-icon{
+    margin: 20px 20px 0 0;
+
+}
+
+.recently-listed .recent-houses .body .img .icon-price .icons_and_more_description .bed-icon .bed-icon-img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background: #33CCA8;
+
+}
+
+.recently-listed .recent-houses .body .img .icon-price .icons_and_more_description .bed-icon .bed-icon-img img{
+   width: 18px;
+   height: 18px;
+   margin: 4px;
+}
+
+.recently-listed .recent-houses .body .img .icon-price .icons_and_more_description .bed-icon p{
+    text-align: center;
+    color: #fff;
+
+}
+
+.recently-listed .recent-houses .body .description{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background: #e9fdf8;
+    align-items: flex-start;
+    padding: 20px 30px;
+    border-radius: 0px 0px 20px 20px;
+}
+.recently-listed .recent-houses .body .description p{
+    width: 100%;
+}
+
+.recently-listed .recent-houses .body .description .location-and-time-listed{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.recently-listed .recent-houses .body .description .location{
+    margin-top: 15px;
+}
+
+/* recent houses section ends */
+
+
+
+.section2{
+    padding: 0 100px;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.section2 .img img{
+    position: relative;
+    
+}
+.section2 .img .empty{
+    position: relative;
+    right: 145px;
+}
+.section2 .text{
+    width: 40%;
+    align-self: center;
+}
+
+.section2 .text p{
+    font-weight: 700;
+
+}
+/* loctions */
+.location{
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 100px;
+}
+
+.location p{
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+.location .locations{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+}
+
+.location .locations .img {
+    position: relative;
+    margin-top: 50px;
+}
+
+.location .locations p{
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    margin-top: -25px;
+    margin-left: -25px;
+    text-align: center;
+    padding: 10px 20px;
+    background: rgba(51, 51, 51, 0.7);
+    border-radius: 10px;
+    color: #fff;
+    z-index: 1000;
+}
+
+
+
+
+
+
+/* footer */
+
+.footer{
+    background: #333;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    /* margin-top: px; */
+    
+}
+
+.footer .top{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    /* align-items: ; */
+}
+
+.footer .top .logo-img{
+    width: 30%;
+    height: 70px;
+    object-fit: contain;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.footer .top .logo-img img{
+    width: 150px;
+    height: 113px;
+}
+
+.footer .top .footer-links{
+    width: 50%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-top: 50px;
+    /* margin: 50px -15px 0px 71px; */
+}
+
+.footer .top .footer-links .footer-link{
+    width: 200px;
+}
+
+
+.footer .top ul a{
+    text-decoration: none;
+    
+}
+
+
+.footer .top ul a li{
+    color: #fff;
+    list-style: none;
+    padding-bottom: 40px;
+}
+
+
+
+.footer .bottom p{
+    text-align: center;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+   
+} 
+
+
+
+
+
+/* mobile views */
+
+@media only screen and (max-width: 991px){
+    .navbar{
+        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1);
+        
+    }
+    
+    
+
+    .navbar .logo{
+        width: 100px;
+        height: 70px;
+        margin-left: 70px;
+        
+     }
+
+  
+    .navbar .navlinks{
+        display: none;
+        
+    }
+
+    .navbar .navdropdown{
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        text-align: center;
+        z-index: 1000;
+        background: #FEF9E6;
+        width: 100%;
+        height: 250px;
+        padding-bottom: 5px;
+        box-shadow: inset 0px 6px 6px rgb(0 0 0 / 10%);
+
+
+    }
+
+
+    .navbar ul{
+        display: block;
+    }
+    .navbar .navdropdown ul li{
+        margin-right: 73px;
+        /* margin: 30px 0; */
+        padding: 10px 5px;
+        color: #333;
+        display: block;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        border: solid 1px #333;
+        margin-left: -1px;
+        margin-top: 18px;
+    }
+    
+    /* .navbar .navdropdown ul li:hover{
+        background: #C4C4C4;
+    } */
+    
+    .navbar .navlinks ul li a .hide{
+        display: none;
+    }
+
+    .navlinks ul:nth-child(2){
+        margin-top: -12px;
+    }
+
+    .account-icon {
+        display: block;
+        position: absolute;
+        right: 80px;
+
+    }
+
+    .hamburgeropen{
+        display: block;
+        position: absolute;
+        right: 20px;
+        
+    }
+
+    .hamburgeropenopen .line{
+        cursor: pointer;
+    }
+
+
+    .nav2{
+        width: 100%;
+        height: 250px;
+        background: #FEF9E6;
+        position: absolute;
+        top: 240px;
+        left: 0;
+        /* border-radius: 20px; */
+        clip-path: ellipse(80% 30% at 50% 0%);
+    }
+
+
+
+    /* hero */
+
+    .hero{
+        padding: 0px 30px;
+    }
+
+    .hero .head{
+        width: 100%;
+    }
+
+    .hero .head h3{
+        font-size: 1.5rem;
+        line-height: initial;
+        text-align: center;
+    }
+
+    .hero .head p{
+        font-size: 1.2rem;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .hero .buy > p, .rent > p, .lease > p{
+        padding: 10px 0;
+        width: 100px;
+        height: 40px;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .dropdown .dropdown-options{
+        padding: 0 30px;
+    }
+    .dropdown .dropdown-options .searchbar input{
+
+        height: 50px;
+    }
+
+    .hero .dropdown-options .search-button {
+        /* align-self: flex-start; */
+        justify-content: flex-start;
+    }
+
+    .sub-hero{
+        padding: 0 30px;
+        justify-content: space-between;
+    }
+
+    .sub-hero .item{
+        /* margin-top: 0; */
+        width: 230px;
+        justify-content: flex-start;
+    }
+
+    .sub-hero .item img{
+        width: 25px;
+        /* height: 25px; */
+    }
+
+    .sub-hero .item p{
+        font-size: .7rem;
+    }
+
+
+    .section1{
+        padding: 0 30px;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .section1 .text{
+        width: 30%;
+        
+    }
+    
+
+    .listing{
+        padding: 0 30px;
+    }
+
+    .listing .listed-houses{
+        justify-content: space-between;
+    }
+
+    .section2{
+        padding: 0 30px;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .section2 .text{
+        width: 100%;
+        
+    }
+    
+    .section2 .img img{
+        width: 100%;
+    }
+
+    .subscribe{
+        padding: 0 20px;
+    }
+
+    .subscribe .button2{
+        margin: 0;
+    }
+
+    .recently-listed{
+        padding: 0 30px;
+    }
+
+
+    .footer{
+        padding: 0px 30px;
+    }
+
+
+    .footer .top .logo-img img{
+        margin-top: 102px;
+        width: 87px;
+        height: 63px;
+
+    }
+ 
+    .footer .top .footer-links{
+        justify-content: flex-start;
+        margin-left: -70px;
+    }
+
+    .footer .top .footer-link{
+        display: flex;
+        margin: 50px -18px 0px 18px;
+        
+    }
+
+    .footer .top .footer-link a{
+        font-weight: 400;
+        font-size: .9rem;
+        line-height: 15px;
+        text-align: justify;
+    
+    }
+    .footer .top .footer-link ul img{
+        width: 15px;
+        height: 15px;
+    }
+    
+    .footer .bottom p{
+
+        font-size: .9rem;
+    }
+    
+
+}
+
+@media only screen and (max-width: 768px){
+    .section1 .img{
+        width: 100%;
+        
+    }
+    .section1 .img img{
+        width: 100%;
+    }
+
+
+    .section1 .text{
+        width: 100%;  
+    }
+
+    
+    .listing .listed-houses .body{
+        width: 300px;
+    }
+
+    .listing .listed-houses .body .img{
+        width: 300px;
+    }
+    .section12.img{
+        width: 100%;
+        
+    }
+    .section2 .img img{
+        width: 100%;
+    }
+
+
+    .section2 .text{
+        width: 100%;  
+    }
+}
+
+
+@media only screen and (max-width: 512px){
+    .navbar .logo{
+        width: 100px;
+        height: 70px;
+        margin-left: 30px;
+        
+     }
+
+
+
+    .hero .dropdown-options{
+        padding: 0 15px;
+    }
+
+    .hero .dropdown-options .options select{
+        width: 120px;
+        height: 50px;
+    }
+
+    .hero .dropdown-options .search-button{
+        display: block;
+        width: 136px;
+    }
+
+    .hero .dropdown-options .search-button input{
+        width: 150px;
+        height: 50px;
+    }
+    
+    .sub-hero{
+        flex-flow: row wrap;
+    }
+    .sub-hero .item{
+        width: 130px;
+    }
+
+    .sub-hero .item:nth-child(3){
+        width: 100%;
+        align-self: center;
+        margin-top: -20px;
+    }
+
+    .sub-hero .item p{
+        text-align: center;
+    }
+    .section1 img{
+        width: 100%;
+    }
+    .section1 .img img{
+        width: 100%;
+    }
+
+
+    .section1 .text{
+        width: 100%;  
+    }
+
+    .section1 .text p{
+        font-size: .8em;
+    }
+  
+
+    .listing .listed-houses{
+        justify-content: center;
+    }
+    .listing h3{
+        justify-content: center;
+        padding: 0;
+
+    }
+    .listing p a{
+        padding: 0 60px;
+    }
+
+    .recently-listed h3{
+        padding: 0;
+        justify-content: center;
+    }
+
+    .recently-listed .recent-houses{
+        justify-content: center;
+    }
+
+    .become-an-agent{
+        padding: 0 30px;
+    }
+
+    .become-an-agent .button{
+        margin: 0;
+    }
+
+    .become-an-agent{
+        padding: 0 30px;
+    }
+
+    .location{
+        padding: 0 30px;
+    }
+    .location p{
+        display: flex;
+        justify-content: center;
+          
+    }
+
+    .location .locations{
+        justify-content: center;
+    }
+  
+
+    .location .locations .img img {
+        width: 315px;
+        height: 315px;
+    }
+
+    .location .locations p{
+        padding: 10px 10px;
+        left: 45%;
+    }
+ 
+}    
+
+
+@media only screen and (max-width: 375px){
+
+    /* .navbar ul li{
+        margin: 21px 133px 26px 34px;
+        padding: 12px 0px;
+        color: #33CCA8;
+       
+    } */
+
+
+    .navbar img{
+        object-fit: contain;
+    }
+    
+
+    .hero .dropdown-options .search {
+        width: 130px;
+        height: 50px;
+    }
+   
+    
+
+    .become-an-agent{
+        height: 100px;
+        flex-flow: column;
+    }
+    
+    .become-an-agent p{
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .become-an-agent .button{
+        margin: 0;
+        width: 200px;
+        height: 45px;
+              
+    }
+    .become-an-agent .button a{
+        font-size: 14px;
+        font-weight: 600; 
+    }
+
+    
+    
+
+   
+}    

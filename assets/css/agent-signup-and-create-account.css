@@ -1,0 +1,342 @@
+
+
+/* create account */
+
+
+.create-account{
+    width: 100%;
+}
+.create-account .header-img{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    background: url("../img/hero-img-one.png");
+    height: 200px;
+    width: 100%;
+    z-index: 1000;
+    /* height: 200px; */
+}
+/* .create-account .header-img img{
+    height: 200px;
+} */
+
+.create-account .header{
+    position: relative;
+    top: -100px;
+    display: flex;
+    justify-content: center;
+    /* padding-top: 100px; */
+}
+.create-account .header h3{
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.remove-header-text{
+    display: none;
+}
+.create-account .body{
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+
+.create-account .left{
+    /* display: flex; */
+    width: 45%;
+    flex-flow: row nowrap;
+
+}
+
+.create-account .left .form{
+    width: 100%;
+    margin: 20px 0px 0px 100px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  
+}
+
+.create-account .left .form .input{
+    width: 75%;
+    border: none;
+    border-bottom: 1px solid #333;
+    /* padding: 10px 0px; */
+    /* margin: 10px 0px; */
+}
+
+.create-account .left .form input:focus{
+    outline: none;
+
+}
+
+.create-account .left .form label{
+    margin: 50px 0px -20px 0px;
+}
+
+
+.create-account .left .form  .checkbox{
+    margin-top: 71px;
+}
+
+.create-account .left .form .checkbox label{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22.5px;
+    width: 75%;
+    display: block;
+}
+
+
+.create-account .left .form .button{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #33CCA8;
+    padding: 10px;
+    margin-top: 57px;
+    border-radius: 10px;
+    
+}
+
+.create-account .left .form .button a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    /* font-size: 18px; */
+    line-height: 22.5px;
+}
+
+.create-account .left .form .login{
+    margin: 69px 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.create-account .left .login-text a{
+    text-decoration: none;
+    color: #FFC700;
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+
+
+
+
+.create-account  .right-logo{
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 75px;
+    
+}
+
+.create-account  .right-logo p {
+    padding: 75px 0px 0px 0px;
+}
+
+.create-account  .right-logo img{
+    width: 75%;
+    height: 75%;
+
+}
+
+.create-account .right-logo a{
+    color: #FFC700;
+    text-decoration: none;
+}
+
+/* create account ends */
+
+
+
+
+/* agent sign-up starts */
+
+.agent-sign-up{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+
+}
+
+.agent-sign-up div{
+    display: inline;
+
+}
+
+/* agent sign-up ends */
+
+/* verify email */
+
+.verify-email{
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+}
+
+.verify-email .verify-email-box{
+    max-width: 400px;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 2rem auto;
+    padding: 1.5rem 1.5rem 0rem 2rem;
+    background: #FEF9E6;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.verify-email h2{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+.verify-email img{
+    margin-top: 25px;
+}
+
+.verify-email .verify-email-box p{
+    font-size: small;
+    margin-top: 25px;
+    text-align: center;
+}
+.verify-email .verification-code{
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.verify-email .verification-code input{
+    width: 50px;
+    height: 70px;
+    padding: 15px;
+
+    font-size: 1.5rem;
+    border: 2px solid #33CCA8;
+    border-radius: 10px;
+
+}
+
+.verify-email button{
+    margin-top: 15px;
+    height: 55px;
+    width: 250px;
+    background: #FFC700;
+    color: #fff;
+    border: solid 2px #FFC700;
+    /* padding: 0px 50px; */
+    border-radius: 5px;
+    font-weight: 700;
+    position: relative;
+    /* margin-left: 50px; */
+}
+
+.verify-email .resend a{
+    text-decoration: none;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 190px;
+    color: #FFC700;
+    font-weight: 600;
+}
+
+.verify-email .cancel a{
+    color: #FFC700;
+    text-decoration: none;
+    margin-right: 190px;
+}
+
+
+@media only screen and (max-width: 991px){
+
+    .remove{
+        display: none;
+    }
+
+    .show{
+        display: block;
+    }
+
+    .create-account .header{
+        flex-flow: column;
+        align-items: center;
+        /* top: 0px; */
+    }
+    .create-account .body{
+        width: 100%;
+        flex-flow: column;
+    }
+
+    .create-account .body .left{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .create-account .body .left .form{
+        padding: 0px 30px;
+        margin: 0;
+    }
+
+    .create-account .left .form .input{
+        width: 100%;
+    }
+
+
+
+    .create-account .body .left .form .button{
+        width: 100%;
+    }
+
+    .create-account .left .form .login{
+        justify-content: center;
+    }
+
+    .verify-email-box{
+        width: 300px;
+    }
+    .verify-email button{
+        /* margin: 30px 0; */
+        width: 150px;
+        height: 45px;
+        border-radius: 10px;
+    }
+
+    .verify-email .resend a{
+        margin-left: 190px;
+        
+    }
+
+    .verify-email .cancel a{
+        margin-top: -20px;
+    }
+}
+
