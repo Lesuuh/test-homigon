@@ -44,6 +44,7 @@
 .list-a-house .dropdown select{
     border-radius: 5px;
     border: 2px solid #33cca8;
+    background: #fff !important; 
 }
 
 .list-a-house .dropdown-input .dropdown p{

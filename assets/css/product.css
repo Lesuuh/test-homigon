@@ -2,6 +2,7 @@
 .product{
     padding: 0px 80px;
     margin-top: 100px;
+    margin-bottom: 20px;
 }
 
 .product form{
@@ -38,6 +39,7 @@ form .input-search input{
     padding: 10px 10px;
     outline: none;
     border: none;
+    margin: 10px;
 }
 
 .product .dropdown .dropdown-options .options{
@@ -48,6 +50,7 @@ form .input-search input{
     height: 70px;
     border: 2px solid #33CCA8;
     border-radius: 5px;
+    background: #fff;
 }
 
 
@@ -107,22 +110,19 @@ form .input-search input{
 
 .listed{
     width: 60%;
-    height: 1500px;
     background: #effaf8;
-    /* padding: 0 50px; */
+    height: fit-content;
     border-radius: 20px;
     
 }
 
 .contact-agent{
-    width: 20%;
+    width: 30%;
     margin-left: 100px;
     height: auto;
 }
 
-.contact-agent .details-rating{
 
-}
 
 .listed .img-container{
     width: 100%;
@@ -349,8 +349,11 @@ form .input-search input{
 
 .similar-houses{
     margin-top: 50px;
-    padding: 50px 0;
-    
+}
+
+.similar-houses-box{
+    display: flex;
+    flex-flow: column;
 }
 
 .similar-houses p{
@@ -363,7 +366,7 @@ form .input-search input{
 }
 
 .similar-houses .body{
-    display: flex;
+    /* display: flex; */
     flex-flow: column;
     width: 300px;
     margin: 25px 25px;
@@ -497,6 +500,10 @@ form .input-search input{
         width: 100%;
         margin-left: 0;
     }
+    .similar-houses-box{
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
     .similar-houses .property-listed{
         margin-left: 0;
     }
@@ -570,7 +577,7 @@ form .input-search input{
 
     }
     .contact-agent .details-rating .agent-details{
-        height: 176px;
+        height: 200px;
     }
 
     .contact-agent .details-rating .agent-details .call-agent{
@@ -578,8 +585,8 @@ form .input-search input{
     
     }
     .contact-agent .details-rating .agent-rating-reviews{
-        height: 176px;
-        justify-content: flex-start;
+        height: 200px;
+        
     }
 
 
@@ -636,6 +643,7 @@ form .input-search input{
     .call-agent{
       width: 100%;
       flex-flow: row nowrap;
+      padding: 0 10px;
     }
     .call-agent .button{
         width: 120px;
@@ -654,6 +662,9 @@ form .input-search input{
         font-size: .9rem;
     }
 
+    .similar-houses-box{
+        justify-content: center;
+    }
    
     
     
