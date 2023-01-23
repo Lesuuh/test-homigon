@@ -84,23 +84,26 @@
 
         <div class="body">
             <div class="login">
-                
-                <div class="form">
-                    <label for="">E-mail</label><br>
-                    <input type="email" class="input" required><br>
-    
-                    <label for="" class="password">Password</label><br>
-                    <input type="password" class="input" id="password-input" required><br>
-                    <span toggle="#password-field" class="fa fa-eye field-icon toggle-password" id="password-icon" onclick="togglePassword()"></span>
-                    <span toggle="#password-field" class="fa fa-eye-slash field-icon toggle-password" id="password-icon-close" onclick="togglePassword()"></span>
-                    
-    
-                    <div class="login-button">
-                        <a href="dashboard.html">Login</a>
+                <form action="#" method="post">
+                    <div class="form">
+                        <label for="">E-mail</label><br>
+                        <input type="email" class="input" required><br>
+        
+                        <label for="" class="password">Password</label><br>
+                        <input type="password" class="input" id="password-input" required><br>
+                        <span toggle="#password-field" class="fa fa-eye field-icon toggle-password" id="password-icon" onclick="togglePassword()"></span>
+                        <span toggle="#password-field" class="fa fa-eye-slash field-icon toggle-password" id="password-icon-close" onclick="togglePassword()"></span>
+                        
+        
+                        <div class="login-button">
+                            <a href="dashboard.html">Login</a>
+                        </div>
+                        <h3 id="forgot-password-open"> Forgot Password?</h3>
+        
                     </div>
-                    <h3 id="forgot-password-open"> Forgot Password?</h3>
-    
-                </div>
+                </form>
+                
+                
             </div>
     
     
@@ -155,7 +158,7 @@
                 <img src="assets/img/undraw_online_ad_re_ol62 2.png" alt="">
             </div>
             <p>Enter the six digit code that was sent to your email address to reset password</p>
-            <form action="">
+            <form action="" method="">
                 <div class="verification-code">
                     <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
                     <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
@@ -177,7 +180,7 @@
         <div class="new-password-box">
             <h2>Forgot Password</h2>
             <p>Enter the email address for your account, we will send a verification code to your email address</p>
-            <form action="">
+            <form action="" method="">
                 <input type="password" placeholder="Enter New Password">
                 <input type="password" placeholder="Confirm Password">
                 <div class="button">
