@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List a house</title>
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -16,7 +15,6 @@
     <link rel="stylesheet" href="assets/css/sign-in.css">
     <link rel="stylesheet" href="assets/css/agent-account.css">
     <link rel="stylesheet" href="assets/css/list-a-house.css">
-    <link rel="stylesheet" href="assets/css/list-a-house2.css">
     <link rel="stylesheet" href="assets/css/faq.css">
     <link rel="stylesheet" href="assets/css/product.css">
     <link rel="stylesheet" href="assets/css/product-listing.css">
@@ -71,198 +69,227 @@
 
 
     <div class="list-a-house">
-
-    
-
         <div class="header">
             <h2>List a House</h2>
         </div>
 
-        <form action="">
-
-        
-
-        <div class="step-one">
-            <div class="heading"><p>Step 1: Select Category</p></div>
-            
-            <div class="dropdown-input">
-
-                <div class="dropdown">
-                    <p>Category</p>
-                    <select class="form-select">
-                        <label for=""><p>Type of house</p></label>
-                        <option selected>Select an Option</option>
-                        <option value="1">Buy</option>
-                        <option value="2">Rent</option>
-                        <option value="3">Lease</option>
-                    </select>
-                </div>
-                    
-
-                <div class="dropdown">
-                    <p>Type of House</p>
-                    <select class="form-select">
-                        <label for=""><p>Type of house</p></label>
-                        <option selected>Select an Option</option>
-                        <option value="1">Flat</option>
-                        <option value="2">Boys Quarter</option>
-                        <option value="3">Studio Apartment</option>
-                    </select>
-                </div>
-                
-
-            </div>
-        </div>
-
-        <div class="step-two">
-            <div class="heading"><p>Step 2: House Details</p></div>
-        
-            
-            <div class="dropdown-input">
-
-                <div class="dropdown">
-                    <p>Title</p>
-                    <input type="text" placeholder="Add a caption for your listing">
-                </div>
-                    
-
-                <div class="dropdown">
-                    <p>Location</p>
-                    <input type="text" placeholder="Location of the house">
-                </div>             
-        
-            </div>
-
-            
-            <div class="dropdown-input">
-
-                <div class="dropdown">
-                    <p>Condition</p>
-                    <select class="form-select">
-                        <label for=""><p>Type of house</p></label>
-                        <option selected>Select an Option</option>
-                        <option value="1">Furnunised</option>
-                        <option value="2">Unfurnished</option>
-                    </select>
-                </div>
-                    
-
-                <div class="dropdown">
-                    <p>Nearest Bustop</p>
-                    <input type="text" placeholder="Nearest Bustop/Landmark to house">
-                </div>
-                
-
-            </div>
-      
-        
-
-            
-            <div class="dropdown-input">
-
-                <div class="dropdown">
-                    <p>Number of Rooms</p>
-                    <select class="form-select">
-                        <label for=""><p>Type of house</p></label>
-                        <option selected>Select an Option</option>
-                        <option value="1">1 Bedroom</option>
-                        <option value="2">2 Bedrooms</option>
-                        <option value="3">3 Bedrooms</option>
-                        <option value="3">4 Bedrooms and above</option>
-                    </select>
-                </div>
-                    
-
-                <div class="dropdown amenities">
-                    <p>Amenities</p>
-                    <div class="multiselect">
-                        <div class="selectBox" onclick="showCheckboxes()">
-                        <select>
-                            <option>Select an Option</option>
-                        </select>
-                        <div class="overSelect"></div>
+        <form action="" id="formm" >
+            <div id="first-section">
+                <div class="step-one">
+                    <div class="heading"><p>Step 1: Select Category</p></div>
+                    <div class="dropdown-input">
+                        <div class="dropdown">
+                            <p>Category</p>
+                            <select class="form-select">
+                                <label for=""><p>Type of house</p></label>
+                                <option selected>Select an Option</option>
+                                <option value="1">Buy</option>
+                                <option value="2">Rent</option>
+                                <option value="3">Lease</option>
+                            </select>
                         </div>
-                        <div id="checkboxes">
-                        <label for="one">
-                            <input type="checkbox" id="one" />Good access road</label>
-                        <label for="two">
-                            <input type="checkbox" id="two" />Security</label>
-                        <label for="three">
-                            <input type="checkbox" id="three" />Light</label>
+                            
+                        <div class="dropdown">
+                            <p>Type of House</p>
+                            <select class="form-select">
+                                <label for=""><p>Type of house</p></label>
+                                <option selected>Select an Option</option>
+                                <option value="1">Flat</option>
+                                <option value="2">Boys Quarter</option>
+                                <option value="3">Studio Apartment</option>
+                            </select>
+                        </div> 
+                    </div>
+                </div>
+    
+                <div class="step-two">
+                    <div class="heading"><p>Step 2: House Details</p></div>
+                    <div class="dropdown-input">
+                        <div class="dropdown">
+                            <p>Title</p>
+                            <input type="text" placeholder="Add a caption for your listing">
+                        </div>
+                        <div class="dropdown">
+                            <p>Location</p>
+                            <input type="text" placeholder="Location of the house">
+                        </div>             
+                    </div>
+    
+            
+                    <div class="dropdown-input">
+                        <div class="dropdown">
+                            <p>Condition</p>
+                            <select class="form-select">
+                                <label for=""><p>Type of house</p></label>
+                                <option selected>Select an Option</option>
+                                <option value="1">Furnunised</option>
+                                <option value="2">Unfurnished</option>
+                            </select>
+                        </div>
+                        <div class="dropdown">
+                            <p>Nearest Bustop</p>
+                            <input type="text" placeholder="Nearest Bustop/Landmark to house">
                         </div>
                     </div>
-                </div>  
-            </div>    
+    
+    
+    
             
-            <div class="dropdown-input">
-
-                <div class="dropdown">
-                    <p>Number of Toilets</p>
-                    <select class="form-select">
-                        <label for=""><p>Type of house</p></label>
-                        <option selected>Select an Option</option>
-                        <option value="1">1 Toilet</option>
-                        <option value="2">2 Toilets</option>
-                        <option value="3">3 Toilets</option>
-                        <option value="3">4 Toilets and above</option>
-                    </select>
-                </div>
-                    
-
-                <div class="dropdown">
-
-                    <p>Price</p>
-                    <!-- <div class="price">
-                        <span>&#8358</span>
-                        <input type="text">
-                    </div> -->
-                    <div class="input-group mb-3 price">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text">&#8358</span>
+                    <div class="dropdown-input">
+    
+                        <div class="dropdown">
+                            <p>Number of Rooms</p>
+                            <select class="form-select">
+                                <label for=""><p>Type of house</p></label>
+                                <option selected>Select an Option</option>
+                                <option value="1">1 Bedroom</option>
+                                <option value="2">2 Bedrooms</option>
+                                <option value="3">3 Bedrooms</option>
+                                <option value="3">4 Bedrooms and above</option>
+                            </select>
                         </div>
-                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            
+    
+                        <div class="dropdown amenities">
+                            <p>Amenities</p>
+                            <div class="multiselect">
+                                <div class="selectBox" onclick="showCheckboxes()">
+                                <select>
+                                    <option>Select an Option</option>
+                                </select>
+                                <div class="overSelect"></div>
+                                </div>
+                                <div id="checkboxes">
+                                <label for="one">
+                                    <input type="checkbox" id="one" />Good access road</label>
+                                <label for="two">
+                                    <input type="checkbox" id="two" />Security</label>
+                                <label for="three">
+                                    <input type="checkbox" id="three" />Light</label>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>    
+            
+                    <div class="dropdown-input">
+    
+                        <div class="dropdown">
+                            <p>Number of Toilets</p>
+                            <select class="form-select">
+                                <label for=""><p>Type of house</p></label>
+                                <option selected>Select an Option</option>
+                                <option value="1">1 Toilet</option>
+                                <option value="2">2 Toilets</option>
+                                <option value="3">3 Toilets</option>
+                                <option value="3">4 Toilets and above</option>
+                            </select>
+                        </div>
+                            
+    
+                        <div class="dropdown">
+    
+                            <p>Price</p>
+                            <!-- <div class="price">
+                                <span>&#8358</span>
+                                <input type="text">
+                            </div> -->
+                            <div class="input-group mb-3 price">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">&#8358</span>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            </div>
+                        </div>
+                    </div>
+    
+    
+    
+            
+                    <div class="dropdown-input">
+    
+                        <div class="dropdown">
+                            <p>Number of Bathrooms</p>
+                            <select class="form-select">
+                                <label for=""><p>Type of house</p></label>
+                                <option selected>Select an Option</option>
+                                <option value="1">1 Bathrooms</option>
+                                <option value="2">2 Bathrooms</option>
+                                <option value="3">3 Bathrooms</option>
+                                <option value="4">4 Bathrooms and above</option>
+                            </select>
+                        </div>
+                            
+    
+                        <div class="dropdown">
+                            <p>Additional Information</p>
+                            
+                            <textarea name="" id="" cols="50" rows="6" placeholder="Add any additional information you will want  people to see.  Add as much details of your house as posible"></textarea>
+    
+                        </div>
+                    </div>
+    
+            
+            
+    
+                    <div class="buttons" style="margin-top: 100px;">
+                        <a id="reset">Cancel</a>
+                        <a id="next-page">Next Page</a>
+                    </div>
+    
+                </div>
+            </div>
+            
+                <!-- new section -->
+                <div class="list-a-house" id="next-section">
+                    <div class="step-one">
+                        <div class="heading">
+                            <p>Step 3: Add Pictures</p>
+                        </div>
+                        
+                        <div class="picture-upload">
+                            <p>Add at least 4 photos for this category, the first picture will be the title picture. </p>
+
+                            <button id="upload-btn">+</button>
+                            <p>Each picture must not exceed 5 Mb</p>
+                            <p>Supported formats are *.jpg and *.png</p>
+                        
+                            <!-- <input type="file" multiple onchange="previewMultiple(event)" id="additionalfoto" style="display: none;"> -->
+
+                            <input type="file" id="input" accept="images/png images/jpeg images/jpg" style="display: none;">
+                            <div id="preview">
+                                <div class="preview-box"></div>
+                                <div class="preview-box"></div>
+                                <div class="preview-box"></div>
+                                <div class="preview-box"></div>
+                            </div>
+                
+                        </div>
+
+                        <div class="buttons">
+                            <a id="previous-page">Previous</a>
+                            <a onclick="confirmListing()" id="finish-listing">Finish</a>
+                        </div>
                     </div>
                     
-                   
                 </div>
-                
-
-            </div>
-        
-
-        
-            
-            <div class="dropdown-input">
-
-                <div class="dropdown">
-                    <p>Number of Bathrooms</p>
-                    <select class="form-select">
-                        <label for=""><p>Type of house</p></label>
-                        <option selected>Select an Option</option>
-                        <option value="1">1 Bathrooms</option>
-                        <option value="2">2 Bathrooms</option>
-                        <option value="3">3 Bathrooms</option>
-                        <option value="4">4 Bathrooms and above</option>
-                    </select>
-                </div>
-                    
-
-                <div class="dropdown">
-                    <p>Additional Information</p>
-                    
-                    <textarea name="" id="" cols="50" rows="6" placeholder="Add any additional information you will want  people to see.  Add as much details of your house as posible"></textarea>
-
-                </div>
-            </div>
-
-            <div class="buttons" style="margin-top: 100px;">
-                <a>Cancel</a>
-                <a href="list-a-house2.html">Next Page</a>
-            </div>
-                
-
-        </div>
         </form>
+        
+        
+        
+            <div class="listing-confirmation" id="listing-confirmation">
+                <div class="listing-confirmation-box">
+                    <div class="img">
+                        <img src="assets/img/undraw_happy_announcement_re_tsm0 1.png" alt="">
+                    </div>
+                    <p>Your  House has been listed successfully </p>
+        
+                    <a href="dashboard.html">Go to My Account</a>
+                </div>
+            </div>
+                
+
+        </div>
+
     </div>
     
 

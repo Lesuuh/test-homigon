@@ -438,7 +438,7 @@ h3{
     }
     
     .sign-up .body .login{
-        display: flex;
+        /* display: flex; */
         justify-content: center;
         width: 100%;
     }
