@@ -127,6 +127,7 @@ form .input-search input{
 .listed .img-container{
     width: 100%;
     display: flex;
+    flex-flow: column;
     justify-content: space-evenly;
     border: none;
     
@@ -135,7 +136,7 @@ form .input-search input{
 .listed .img-container .img-box1{
     width: 100%;
     height: 100%;
-    margin-top: -45px;
+    
 }
 
 .listed .img-container .img-box1 img{
@@ -146,14 +147,22 @@ form .input-search input{
 }
 
 
+.listed .img-container .other-img{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+
 .listed .img-container .img-box{
     margin-top: 30px;
 }
 
 .listed .img-container .img-box img{
-    width: 174px;
-    height: 160px;
-    object-fit: contain;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
 }
 
 
@@ -554,13 +563,13 @@ form .input-search input{
 
 
     .listed .img-container .img-box1 img {
-        width: 300px;
+        width: 100%;
         height: 222px;
     }
 
     .listed .img-container .img-box img {
-        width: 70px;
-        height: 90px;
+        width: 100px;
+        height: 100px;
     }
     .listed .icons_and_more_description .bed-icon-img{
         width: 50px;
@@ -636,10 +645,10 @@ form .input-search input{
         height: 45px;
     }
 
-    .listed .img-container .img-box1 img {
+    /* .listed .img-container .img-box1 img {
         width: 250px;
         height: 180px;
-    }
+    } */
     .call-agent{
       width: 100%;
       flex-flow: row nowrap;
