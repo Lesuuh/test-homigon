@@ -14,7 +14,7 @@ h3{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    background: url("../img/hero-img-one.png");
+    background: url("../img/Group\ 431.png");
     height: 200px;
     width: 100%;
     /* z-index: 1000; */
@@ -24,14 +24,14 @@ h3{
 
 .hide{
     display: none;
+    margin-top: 20px;
 }
 
 .sign-up .header h3{
-    /* position: relative; */
+    font-size: 1.5rem;
+    font-weight: 600;
     margin-top: 70px;
-    margin-left: 122px;
-    /* display: flex; */
-    /* justify-content: center; */
+
 }
 
 .sign-up .body{
@@ -124,29 +124,26 @@ h3{
     cursor: pointer;
 }
 
+.sign-up .body .create-an-account .logo img{
+    width: 100%;
+    margin-top: 50px;
 
-.line{
-    width: 0%;
-    height: auto;
-    left: 719px;
-    margin-top: 45px;
-
-    border-left: 2px solid #333;
-    transform: rotate(0deg);
 }
+
+.sign-up .body .create-an-account .description{
+    text-align: center;
+}
+
+
 
 .sign-up .body .create-an-account{
     width: 40%;
     display: flex;
     flex-flow: column;
     justify-content: center;
-    margin-top: 70px;
+    /* margin-top: 70px; */
     
 }
-
-
-
-
 
 
 .sign-up .body .create-an-account .login-button a{
@@ -156,7 +153,6 @@ h3{
     align-items: center;
     color: #333;
     padding: 10px;
-    margin-top: 110px;
     border-radius: 10px;
     border: 1px solid #FFC700;
     color: #333;
@@ -184,9 +180,9 @@ h3{
 }
 
 .forgot-password-box{
-    background: #fef9e6;
+    background: #EFFAF8;
     width: 500px;
-    height: 400px;
+    height: 370px;
     display: flex;
     flex-flow: column;
     /* justify-content: center; */
@@ -197,7 +193,7 @@ h3{
 }
 
 .forgot-password h2{
-    margin-top: 25px;
+    /* margin-top: 25px; */
     text-align: justify;
 }
 
@@ -261,15 +257,15 @@ h3{
 }
 
 .reset-password .reset-password-box{
-    max-width: 400px;
-    height: 550px;
+    width: 400px;
+    /* height: 550px; */
     display: flex;
     flex-flow: column;
     /* justify-content: center; */
     align-items: center;
     margin: 2rem auto;
     padding: 1.5rem 1.5rem 0rem 2rem;
-    background: #FEF9E6;
+    background: #EFFAF8;
     box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
@@ -290,11 +286,15 @@ h3{
     margin-top: 25px;
     text-align: center;
 }
+
+.reset-password .reset-password-box form{
+    width: 100%;
+}
 .reset-password .verification-code{
-    margin-top: 20px;
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 20px;
     width: 100%;
 }
 
@@ -302,7 +302,6 @@ h3{
     width: 50px;
     height: 70px;
     padding: 15px;
-
     font-size: 1.5rem;
     border: 2px solid #33CCA8;
     border-radius: 10px;
@@ -310,8 +309,9 @@ h3{
 }
 
 .reset-password button{
-    margin-top: 35px;
+    margin-top: 50px;
     height: 55px;
+    float: right;
     width: 250px;
     background: #FFC700;
     color: #fff;
@@ -320,15 +320,15 @@ h3{
     border-radius: 5px;
     font-weight: 700;
     position: relative;
-    margin-left: 50px;
 }
 
-.reset-password .resend a{
+.reset-password .reset-password-box .resend-div{
+    align-self: flex-end;
+}
+.reset-password .reset-password-box .resend-div a{
     text-decoration: none;
-    position: relative;
-    margin-top: 50px;
-    margin-left: 250px;
     color: #FFC700;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -346,7 +346,7 @@ h3{
 }
 
 .new-password-box{
-    background: #fef9e6;
+    background: #EFFAF8;
     width: 500px;
     height: 500px;
     display: flex;
@@ -370,8 +370,10 @@ h3{
 
 .new-password form{
     display: flex;
+    width: 100%;
     flex-flow: column;
     justify-content: center;
+    align-items: center;
 }
 
 .new-password input{
@@ -400,10 +402,7 @@ h3{
 
 .new-password .submit{
     margin-top: 8px;
-    margin-left: 70px;
-    padding: 0px 90px;
     width: 250px;
-    height: 55px;
     border: none;
     color: #fff;
     background: #FFC700;
@@ -421,6 +420,10 @@ h3{
         width: 100%;
         text-align: center;
       
+    }
+
+    .sign-up .body .create-an-account .logo img{
+        display: none;
     }
 
 
@@ -472,7 +475,7 @@ h3{
     .forgot-password-box{
         width: 300px;
         height: 350px;
-        padding: 0rem .5rem 0rem .5rem;
+        padding: 1.3rem;
     }
 
     .forgot-password p{
@@ -508,4 +511,32 @@ h3{
         padding: 0;
 
     }
+
+    /* reset password */
+
+    .reset-password .reset-password-box{
+        width: 300px;
+    }
+    .reset-password button{
+        margin-top: 20px;
+        width: 150px;
+        height: 45px;
+        border-radius: 10px;
+        justify-content: space-between;
+    }
+
+    .new-password-box{
+        width: 300px;
+    }
+
+    .new-password-box input{
+        width: 100%;
+        height: 50px;
+    }
+
+    .new-password .submit{
+        width: 150px;
+    }
+
+
 }

@@ -12,21 +12,38 @@
     justify-content: center;
 }
 
-form .input-search input{
+form .input-search{
+    display: flex;
+    border: 1px solid #ccc;
     width: 500px;
     height: 60px;
     border: 2px solid #33CCA8;
     border-radius: 5px;
-    padding: 30px;
-
+    padding: 10px;
 }
 
+form .input-search input{
+    border: none;
+    outline: none;
+    flex: 1;
+
+}
+form .input-search button{
+    background: transparent;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.product .dropdown{
+    width: 100%;
+}
 .product .dropdown .dropdown-options{
-    width: 90%;
     margin-top: 30px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    gap: 20px;
+    /* justify-content: space-between; */
 
 }
 
@@ -43,7 +60,7 @@ form .input-search input{
 }
 
 .product .dropdown .dropdown-options .options{
-    margin: 10px;
+    /* margin: 10px; */
 }
 .product .dropdown .dropdown-options .options select{
     width: 200px;
@@ -51,7 +68,21 @@ form .input-search input{
     border: 2px solid #33CCA8;
     border-radius: 5px;
     background: #fff;
+    padding: 5px;
 }
+
+/* .product .dropdown .dropdown-options .options select{
+    -webkit-appearance: none;
+    appearance: none;
+} */
+.product .dropdown .dropdown-options .options select::after{
+    content: "▼";
+    font-size: 1rem;
+    top: 6px;
+    right: 10px;
+    position: absolute;
+}
+
 
 
 
@@ -112,7 +143,7 @@ form .input-search input{
     width: 60%;
     background: #effaf8;
     height: fit-content;
-    border-radius: 20px;
+    border-radius: 0 0 20px 20px;
     
 }
 
@@ -176,7 +207,7 @@ form .input-search input{
     font-weight: 700;
     
 }
-.listed .details .price-time-location{
+.listed .details .time-location{
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -184,30 +215,30 @@ form .input-search input{
 
 }
 
-.listed .details .price-time-location .price{
+.listed .details .price{
     width: 100%;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
-.listed .details .price-time-location .location-time{
+.listed .details .time-location .location-time{
+    display: flex;
+    width: 100%;
+    gap: 250px;
+
+}
+
+.listed .details .time-location .time, .product-location{
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
 }
 
-.listed .details .price-time-location .time{
-    width: 50%;
-    /* text-align: end; */
-}
-.listed .details .price-time-location .location{
-    margin-top: 0;
-    padding: 0;
-    
-}
-.listed .details .price-time-location .location p{
-    padding: 0;
-    margin-top: 0;
-    display: block;
+.listed .details .time-location .time p, .product-location p{
+    margin-top: 10px;
 }
 
 
@@ -215,11 +246,12 @@ form .input-search input{
     width: 100%;
     display: flex;
     flex-flow: row;
+    justify-content: flex-start;
+    gap: 135px;
 }
 
 
 .listed .details .icons_and_more_description .bed-icon{
-    width: 150px;
     height: 60px;
     display: flex;
     flex-flow: column;
@@ -243,6 +275,10 @@ form .input-search input{
 .listed .descriptions{
     margin-top: 50px;
     padding: 0 30px;
+}
+
+.listed .descriptions p{
+    font-weight: 700;
 }
 
 .listed .descriptions .small{
@@ -304,8 +340,9 @@ form .input-search input{
 .save-for-later{
     display: flex;
     flex-flow: row;
+    justify-content: right;
     margin-top: 20px;
-    padding: 0 50px;
+    /* padding: 0 50px; */
    
 }
 .save-for-later p{
@@ -501,8 +538,11 @@ form .input-search input{
 
     .listed{
         width: 100%;
-        padding: 0 10px;
+        /* padding: 0 10px; */
         height: auto;
+    }
+    .listed .details, .listed .descriptions, .call-agent, .save-for-later{
+        padding: 0 10px;
     }
 
     .contact-agent{
@@ -520,15 +560,12 @@ form .input-search input{
 }
 
 @media only screen and (max-width: 512px){
-    form .input-search input{
-        width: 300px;
-        height: 50px;
-        padding: 20px;
+    form .input-search {
+        width: 100%;
     }
 
     .product .dropdown .dropdown-options{
         justify-content: space-between;
-        
         width: 100%;
         gap: 0;
         
@@ -554,12 +591,12 @@ form .input-search input{
         height: auto;
     }
 
-    .listed .details{
+    /* .listed .details{
         padding: 0;
     }
     .listed .descriptions{
         padding: 0;
-    }
+    } */
 
 
     .listed .img-container .img-box1 img {
@@ -570,6 +607,14 @@ form .input-search input{
     .listed .img-container .img-box img {
         width: 100px;
         height: 100px;
+    }
+
+    .listed .details .time-location .location-time{
+        gap: 50px;
+    }
+
+    .listed .details .icons_and_more_description{
+        gap: 50px;
     }
     .listed .icons_and_more_description .bed-icon-img{
         width: 50px;
@@ -640,6 +685,7 @@ form .input-search input{
 }
 
 @media only screen and (max-width: 375px){
+
     form .input-search input{
         width: 300px;
         height: 45px;

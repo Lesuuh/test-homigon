@@ -25,25 +25,27 @@
         justify-items: center;
         align-content: center;
         position: absolute;
-        background: #fef9e6;
+        background: #333;
+        /* background: #fef9e6; */
         height:298px;
         z-index: 100000000000000000000000000;
         width: 100%;
-        border-radius: 0 0 50px 50px;
+        /* border-radius: 0 0 50px 50px; */
         top: 70px;
         text-align: start;
         display: none;
         box-shadow: inset 0px 6px 6px rgba(0, 0, 0, 0.1);
     }
     #nav{
-        position: absolute;
+        /* position: absolute;
+        background: #333;
         background: #fef9e6;
         height: 500px;
         z-index: 10000000000;
         width: 100%;
         clip-path: ellipse(80% 30% at 50% 0%);
         top: 242px;
-        display: none;
+        display: none; */
         box-shadow: inset 0px 6px 6px rgba(0, 0, 0, 0.1);
     }
     .account nav ul li{
@@ -68,7 +70,9 @@
     }
     .mediaM{
         display: flex;
+
     }
+ 
     #menubar{
        right: 7%; 
        position: absolute;

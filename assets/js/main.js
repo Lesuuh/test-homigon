@@ -7,6 +7,31 @@ var none = document.getElementById("none")
 var hero = document.getElementById("hero")
 
 
+var radioBtns = document.querySelectorAll(".radio-btn")
+
+radioBtns.forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    radioBtns.forEach((button, i) => {
+      if(i !== index){
+        button.classList.remove("active")
+      }else{
+        button.classList.add("active")
+      }
+    })
+  })
+})
+
+// function changeColor(clickedButton) {
+//   const buttons = document.querySelectorAll('button');
+
+//   buttons.forEach(function(button) {
+//     button.classList.remove('active');
+//   });
+
+//   clickedButton.classList.add('active');
+// }
+
+
 
 
 

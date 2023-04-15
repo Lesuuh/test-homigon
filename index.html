@@ -37,7 +37,7 @@
                 <a href="list-a-house.html"><li>List a House</li></a>
                 <a href="product.html"><li>Rent</li></a>
                 <a href="product.html"><li>Buy</li></a>
-                <li id="none"><a href=""><i class="fa-regular fa-user" style="color: #333;"></i>Account</a>
+                <li id="none"><a href=""><i class="fa-regular fa-user" style="color: #fff;"></i>Account</a>
                     <ul>
                         <a href="sign-in.html"><li>Sign-In</li></a>
                         <a href="create-account.html"><li>Sign-Up</li></a>
@@ -48,11 +48,11 @@
             </ul>
         </div>
 
-        <div class="account-icon"><a href="sign-in.html"><i class="fa-regular fa-user fa-lg" style="color: #333;"></i></a></div>
-        <div class="hamburgeropen" id="hamburgeropen"><i class="fa-solid fa-bars fa-lg"></i></div>
+        <div class="account-icon"><a href="sign-in.html"><i class="fa-regular fa-user fa-lg" style="color: #fff;"></i></a></div>
+        <div class="hamburgeropen" id="hamburgeropen"><i class="fa-solid fa-bars fa-lg" style="color: #fff;"></i></div>
 
         <div class="navdropdown" id="navdropdown">
-            <div class="hamburgerclose" id="hamburgerclose"><i class="fa-solid fa-xmark fa-xl"></i></div>
+            <div class="hamburgerclose" id="hamburgerclose"><i class="fa-solid fa-xmark fa-xl" style="color: #fff;"></i></div>
             <ul>
                 <a href="list-a-house.html"><li>List a House</li></a>
                 <a href="product.html"><li>Rent</li></a>
@@ -60,7 +60,7 @@
                 <a href="faq.html"><li>Help</li></a>
             </ul>
             
-            <div class="nav2"></div>
+            
         </div>
 
         
@@ -87,20 +87,27 @@
             <p>Buy or rent your home at the best price</p>
         </div>
 
-        <div class="buy-rent-lease">
-            <div class="buy"><p>Buy</p></div>
-            <div class="rent"><p>Rent</p></div>
-            <div class="lease"><p>Lease</p></div>
-        </div>
-
-
         <form action="#" method="get">
+
+            <div class="buy-rent-lease">
+          
+                <input type="radio" name="category" value="buy" id="radio1">
+                <label for="radio1" class="radio-btn">Buy</label>
+                <input type="radio" name="category" value="rent" id="radio2">
+                <label for="radio2" class="radio-btn">Rent</label>
+                <input type="radio" name="category" value="lease" id="radio3">
+                <label for="radio3" class="radio-btn">Lease</label>
+                <!-- <button class="buy hero-btn" onclick="changeColor(this)">Buy</button>
+                <button class="rent hero-btn" onclick="changeColor(this)">Rent</button>
+                <button class="lease hero-btn" onclick="changeColor(this)">Lease</button> -->
+            </div>
+
+            <div class="searchbar">
+                <input type="search" placeholder="Enter a location, local goverment or street">
+            </div>
+        
             <div class="dropdown">
                 <div class="dropdown-options">
-
-                    <div class="searchbar">
-                        <input type="search" placeholder="Enter a location, local goverment or street">
-                    </div>
 
                     <div class="options">
                         <select name="all-types" id="all-types">
@@ -110,7 +117,7 @@
                         <option value="boys-quarters">Boys Quarters</option>
                         </select>
                     </div>
-                      
+                        
                     <div class="options">
                         <select name="bedrooms" id="bedrooms">
                         <option value="bedrooms">Bedrooms</option>
@@ -121,8 +128,8 @@
                         </select>
                     </div>
 
-        
-                  <div class="options">
+
+                    <div class="options">
                     <select name="price-range" id="price-range">
                     <option value="Price Range">Price Range</option>
                     <option value="70000">&#8358; 70,000 - &#8358; 100,000</option>
@@ -132,12 +139,13 @@
                     <option value="500,000">&#8358; 500,000 - &#8358; 1 million</option>
                     <option value="1million">1 million and above</option>
                     </select>
-                  </div>
-                  
-                 
-                  <div class="search-button">
+                    </div>
+                    
+                    
+                    <div class="search-button">
                     <input type="submit" value="Search">
-                  </div>           
+                    <!-- <i class="far fa-search"></i> -->
+                    </div>           
                 </div>
                 
             </div>
@@ -149,6 +157,8 @@
     </div>
     
     <!-- hero-section ends -->
+
+    <!-- sub section -->
     <div class="sub-hero">
         <div class="item">
             <div class="icon"><img src="assets/img/Vector (6).png"></div>
@@ -176,7 +186,6 @@
 
     <div class="listing"> 
         <h3>Featured Houses</h3>
-
             <div class="listed-houses">
                 <a href="product.html">
                     <div class="body">
@@ -218,6 +227,47 @@
                         </div>
                     </div>
                 </a>
+                <a href="product.html">
+                    <div class="body">
+                        <div class="img">
+                            <img src="assets/img/Rectangle 212.png" alt="" data-aos="zoom-in" data-aos-duration="1000" class="hover-animation">
+                            <div class="icon-price">
+                                <div class="icons_and_more_description">
+                                    <div class="bed-icon">
+                                        <div class="bed-icon-img">
+                                            <img src="assets/img/bed-icon.png">
+                                        </div>  
+                                        <p>4</p>
+                                    </div>
+                                    <div class="bed-icon">
+                                        <div class="bed-icon-img">
+                                            <img src="assets/img/bathtub-icon.png">
+                                        </div>  
+                                        <p>4</p>
+                                    </div>
+                                    <div class="bed-icon">
+                                        <div class="bed-icon-img">
+                                            <img src="assets/img/bathroom-icon.png">
+                                        </div>  
+                                        <p>4</p>
+                                    </div>
+                                   
+                                </div>
+                                <div class="price"><span>&#8358;</span>500,000</div>
+                            </div>
+                           
+                        </div>
+        
+                        <div class="description">
+                            <p style="font-weight: 700;">4 bedroom Block of Flats in Port Harcourt for Sale</p>
+                            <div class="location-and-time-listed">
+                                <div><img src="assets/img/location.svg"><p>Port-Harcourt</p></div>
+                                <div><img src="assets/img/Vector.png" alt=""><p>2hrs</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
 
                 <a href="product.html">
                     <div class="body">
@@ -308,16 +358,58 @@
                 
             </div>
 
+            <!-- see more -->
             <p><a href="featured-product.html">See More<i class="fa fa-angle-double-right"></i></a></p>
                 
         </div>
     </div>
 
 
+    <!-- recently listed -->
     <div class="recently-listed"> 
         <h3>Recently Listed Houses</h3>
 
             <div class="recent-houses">
+                <a href="product.html">
+                    <div class="body">
+                        <div class="img">
+                            <img src="assets/img/Rectangle 212.png" alt="" data-aos="zoom-in" data-aos-duration="1000" class="hover-animation">
+                            <div class="icon-price">
+                                <div class="icons_and_more_description">
+                                    <div class="bed-icon">
+                                        <div class="bed-icon-img">
+                                            <img src="assets/img/bed-icon.png">
+                                        </div>  
+                                        <p>4</p>
+                                    </div>
+                                    <div class="bed-icon">
+                                        <div class="bed-icon-img">
+                                            <img src="assets/img/bathtub-icon.png">
+                                        </div>  
+                                        <p>4</p>
+                                    </div>
+                                    <div class="bed-icon">
+                                        <div class="bed-icon-img">
+                                            <img src="assets/img/bathroom-icon.png">
+                                        </div>  
+                                        <p>4</p>
+                                    </div>
+                                   
+                                </div>
+                                <div class="price"><span>&#8358;</span>500,000</div>
+                            </div>
+                           
+                        </div>
+        
+                        <div class="description">
+                            <p style="font-weight: 700;">4 bedroom Block of Flats in Port Harcourt for Sale</p>
+                            <div class="location-and-time-listed">
+                                <div><img src="assets/img/location.svg"><p>Port-Harcourt</p></div>
+                                <div><img src="assets/img/Vector.png" alt=""><p>2hrs</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
                 <a href="product.html">
                     <div class="body">
                         <div class="img">
@@ -466,6 +558,7 @@
 
     </div>
 
+    <!-- sub section 2 -->
     <div class="section2" data-aos="fade-up" data-aos-duration="1000">
         <div class="text"><p>“ Home is the starting place of love, hope and dreams. The magic thing about home is that it feels good to leave, and it feels even better to come back.”</p></div>
         <div class="img">
@@ -526,32 +619,34 @@
         <div class="logo-img"><img src="assets/img/logo.png" alt="this is a logo"></div>
         <div class="footer-links">
             <div class="footer-link">
-                <ul>
-                   <a href="faq.html"><li>About us</li></a>
-                   <a href="faq.html"><li>Help</li></a>
-                   <a href="faq.html"><li>FAQ</li></a>
+                <div>
+                    <p><a href="faq.html">About Us</a></p>
+                    <p><a href="faq.html">FAQ</a></p>
+                    <p><a href="faq.html">Help</a></p>
                     
-                </ul>
+                    
+                </div>
             </div>
             <div class="footer-link">
-                <ul>
-                    <a href="product.html"><li>Rent</li></a>
-                    <a href="list-a-house.html"><li>List</li></a>
-                    <a href="product.html"><li>Buy</li></a>
-                    <a href="product.html"><li>Lease</li></a>
-                </ul>
+                <div>
+                    <p><a href="product.html">Rent</a></p>
+                    <p><a href="list-a-house.html">List</a></p>
+                    <p><a href="product.html">Buy</a></p>
+                    <p><a href="product.html">Lease</a></p>
+                </div>
             </div>
             <div class="footer-link">
-                <ul>
-                    <a href="https://www.facebook.com/homigon.ng/"><li>homigon <img src="assets/img/Facebook - Original.png"></li></a>
-                    <a href="https://www.instagram.com/invites/contact/?i=at5zmf0d0jcl&utm_content=oex2ikq"><li>homigon <img src="assets/img/Instagram - Original.png"></li></li></a>                    
-                    <a href="https://twitter.com/Homigon_ng?t=ATHmXqPdqIPtTdCOAwY9sA&s=09"><li>homigon_ng<img src="assets/img/Twitter - Original.png"></li></a>
-                </ul>
+                <div>
+                    <p><a href="https://www.facebook.com/homigon.ng/">homigon <img src="assets/img/Facebook - Original.png"></a></p>
+                    <p><a href="https://www.instagram.com/invites/contact/?i=at5zmf0d0jcl&utm_content=oex2ikq">homigon <img src="assets/img/Instagram - Original.png"></a></p>
+                    <p><a href="https://twitter.com/Homigon_ng?t=ATHmXqPdqIPtTdCOAwY9sA&s=09">homigon_ng <img src="assets/img/Twitter - Original.png"></a></p>
+                    
+                </div>
             </div>
         </div>
 
-        </div>
-        
+    </div>
+
 
 
     <!-- <div class="logo-img-2"><img src="assets/img/logo.png" alt="this is a logo"></div> -->

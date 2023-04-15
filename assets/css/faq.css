@@ -3,7 +3,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    background: url("../img/hero-img-one.png");
+    background: url("../img/Group\ 431.png");
     background-size: cover;
     object-fit: cover;
     object-position: 50% 20%;
@@ -113,11 +113,13 @@ textarea::placeholder{
 }
 
 .accordion{
+    /* padding: 0px 80px; */
     width: 100%;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    gap: 30px;
+    gap: 20px;
+
 }
 
 
@@ -163,9 +165,12 @@ textarea::placeholder{
     .help form{
         padding: 0;
     }
+    .help form .name-contact{
+        display: block;
+    }
 
     .help form .name-contact input{
-        width: 300px;
+        width: 100%;
     }
 
     .help form input[type=submit]{
@@ -192,11 +197,14 @@ textarea::placeholder{
 @media only screen and (max-width: 425px){
 
     .help form input{
-        width: 300px;
+        /* width: 300px; */
         margin: 0;
     }
     
     .form-control{
-        width: 300px;
+        width: 100%;
+    }
+    .accordion{
+        gap: 0;
     }
 }

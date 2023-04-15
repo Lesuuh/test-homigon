@@ -4,6 +4,9 @@ var forgotPasswordClose = document.getElementById("forgot-password-close")
 var resetPasswordOpen = document.getElementById("reset-password-open")
 var resetPassword = document.getElementById("reset-password")
 var resetPasswordClose = document.getElementById("reset-password-close")
+var preventSubmit = document.getElementById("preventSubmit")
+var newPassword = document.getElementById("new-password") 
+var newPasswordClose = document.getElementById("new-password-close")
 
 
 
@@ -51,3 +54,17 @@ function togglePassword() {
     }
     
 }
+
+// preventSubmit
+
+preventSubmit.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    newPassword.style.display = "block"
+
+})
+
+newPasswordClose.addEventListener("click", (e) => {
+    newPassword.style.display = "none"
+    resetPassword.style.display = "none"
+})
