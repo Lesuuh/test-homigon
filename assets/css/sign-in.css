@@ -419,7 +419,7 @@ h3{
         display: block;
         width: 100%;
         text-align: center;
-      
+        margin-top: 30px;
     }
 
     .sign-up .body .create-an-account .logo img{
@@ -444,6 +444,9 @@ h3{
         /* display: flex; */
         justify-content: center;
         width: 100%;
+    }
+    .sign-up .body .form{
+        margin-top: 0;
     }
     .sign-up .body .form .login-button{
         width: 100%;

@@ -295,6 +295,7 @@
     .create-account .body{
         width: 100%;
         flex-flow: column;
+        margin-top: -90px;
     }
 
     .create-account .body .left{
@@ -322,7 +323,9 @@
         justify-content: center;
     }
 
-  
+    .create-account .left .form  .checkbox{
+        margin-top: 41px;
+    }
 
 }
 
